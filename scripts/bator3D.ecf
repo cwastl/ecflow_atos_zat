@@ -654,9 +654,6 @@ do
            if [[ -s $OBSDIR3D/gribsevfile ]] 
            then
               cp $OBSDIR3D/gribsevfile GRIB.${base}
-           elif [[ -s $MF_OBSDIR/gribsevfile ]]
-           then
-              cp $MF_OBSDIR/gribsevfile GRIB.${base}
            else
               base2merge=$( echo $base2merge | sed -e "s/ *$base */ /" )
               continue
@@ -666,9 +663,6 @@ do
            if [[ -s $OBSDIR3D/bufr_3_geowind ]] 
            then
               cp $OBSDIR3D/bufr_3_geowind BUFR.geowind
-           elif [[ -s $MF_OBSDIR/bufr.geowind ]]
-           then
-              cp $MF_OBSDIR/bufr.geowind BUFR.geowind
            else
               base2merge=$( echo $base2merge | sed -e "s/ *$base */ /" )
               continue
@@ -683,9 +677,6 @@ do
            if [[ -s $OBSDIR3D/bufr_7_${base} ]] 
            then
               cp $OBSDIR3D/bufr_7_${base} BUFR.tov${base}
-           elif [[ -s $MF_OBSDIR/bufr.tov${base} ]]
-           then
-              cp $MF_OBSDIR/bufr.tov${base} BUFR.tov${base}
            else
               base2merge=$( echo $base2merge | sed -e "s/ *$base */ /" )
               continue
@@ -695,9 +686,6 @@ do
            if [[ -s $OBSDIR3D/bufr_7_hirs ]] 
            then
                cp $OBSDIR3D/bufr_7_hirs BUFR.tovhirs
-           elif [[ -s $MF_OBSDIR/bufr.tovhirs ]]
-           then
-               cp $MF_OBSDIR/bufr.tovhirs BUFR.tovhirs
            else
               base2merge=$( echo $base2merge | sed -e "s/ *$base */ /" )
               continue

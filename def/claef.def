@@ -54,7 +54,7 @@ suite claef
     endfamily
   endfamily
   family runs
-    repeat date DATUM 20221018 20221231 1
+    repeat date DATUM 20221027 20221231 1
     task dummy
       defstatus suspended
       edit NP '1'
@@ -269,9 +269,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '00'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -445,9 +445,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '01'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -621,9 +621,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '02'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -797,9 +797,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '03'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -973,9 +973,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '04'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -1149,9 +1149,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '05'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -1325,9 +1325,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '06'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -1501,9 +1501,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '07'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -1677,9 +1677,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '08'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -1853,9 +1853,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '09'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -2029,9 +2029,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '10'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -2205,9 +2205,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '11'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -2381,9 +2381,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '12'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -2557,9 +2557,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '13'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -2733,9 +2733,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '14'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -2909,9 +2909,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '15'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -3085,9 +3085,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '16'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -3364,9 +3364,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '00'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -3540,9 +3540,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '01'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -3716,9 +3716,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '02'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -3892,9 +3892,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '03'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -4068,9 +4068,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '04'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -4244,9 +4244,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '05'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -4420,9 +4420,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '06'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -4596,9 +4596,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '07'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -4772,9 +4772,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '08'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -4948,9 +4948,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '09'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -5124,9 +5124,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '10'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -5300,9 +5300,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '11'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -5476,9 +5476,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '12'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -5652,9 +5652,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '13'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -5828,9 +5828,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '14'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -6004,9 +6004,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '15'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -6180,9 +6180,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '16'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -6459,9 +6459,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '00'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -6635,9 +6635,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '01'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -6811,9 +6811,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '02'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -6987,9 +6987,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '03'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -7163,9 +7163,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '04'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -7339,9 +7339,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '05'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -7515,9 +7515,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '06'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -7691,9 +7691,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '07'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -7867,9 +7867,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '08'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -8043,9 +8043,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '09'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -8219,9 +8219,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '10'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -8395,9 +8395,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '11'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -8571,9 +8571,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '12'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -8747,9 +8747,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '13'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -8923,9 +8923,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '14'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -9099,9 +9099,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '15'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -9275,9 +9275,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '16'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -9554,9 +9554,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '00'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -9730,9 +9730,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '01'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -9906,9 +9906,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '02'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -10082,9 +10082,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '03'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -10258,9 +10258,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '04'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -10434,9 +10434,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '05'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -10610,9 +10610,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '06'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -10786,9 +10786,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '07'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -10962,9 +10962,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '08'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -11138,9 +11138,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '09'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -11314,9 +11314,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '10'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -11490,9 +11490,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '11'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -11666,9 +11666,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '12'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -11842,9 +11842,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '13'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -12018,9 +12018,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '14'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -12194,9 +12194,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '15'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -12370,9 +12370,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '16'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -12649,9 +12649,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '00'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -12825,9 +12825,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '01'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -13001,9 +13001,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '02'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -13177,9 +13177,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '03'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -13353,9 +13353,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '04'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -13529,9 +13529,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '05'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -13705,9 +13705,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '06'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -13881,9 +13881,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '07'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -14057,9 +14057,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '08'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -14233,9 +14233,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '09'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -14409,9 +14409,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '10'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -14585,9 +14585,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '11'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -14761,9 +14761,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '12'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -14937,9 +14937,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '13'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -15113,9 +15113,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '14'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -15289,9 +15289,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '15'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -15465,9 +15465,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '16'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -15744,9 +15744,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '00'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -15920,9 +15920,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '01'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -16096,9 +16096,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '02'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -16272,9 +16272,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '03'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -16448,9 +16448,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '04'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -16624,9 +16624,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '05'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -16800,9 +16800,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '06'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -16976,9 +16976,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '07'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -17152,9 +17152,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '08'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -17328,9 +17328,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '09'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -17504,9 +17504,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '10'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -17680,9 +17680,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '11'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -17856,9 +17856,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '12'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -18032,9 +18032,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '13'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -18208,9 +18208,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '14'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -18384,9 +18384,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '15'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -18560,9 +18560,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '16'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -18839,9 +18839,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '00'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -19015,9 +19015,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '01'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -19191,9 +19191,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '02'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -19367,9 +19367,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '03'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -19543,9 +19543,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '04'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -19719,9 +19719,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '05'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -19895,9 +19895,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '06'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -20071,9 +20071,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '07'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -20247,9 +20247,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '08'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -20423,9 +20423,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '09'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -20599,9 +20599,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '10'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -20775,9 +20775,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '11'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -20951,9 +20951,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '12'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -21127,9 +21127,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '13'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -21303,9 +21303,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '14'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -21479,9 +21479,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '15'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -21655,9 +21655,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '16'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -21934,9 +21934,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '00'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -22110,9 +22110,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '01'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -22286,9 +22286,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '02'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -22462,9 +22462,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '03'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -22638,9 +22638,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '04'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -22814,9 +22814,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '05'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -22990,9 +22990,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '06'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -23166,9 +23166,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '07'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -23342,9 +23342,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '08'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -23518,9 +23518,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '09'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -23694,9 +23694,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '10'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -23870,9 +23870,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '11'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -24046,9 +24046,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '12'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -24222,9 +24222,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '13'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -24398,9 +24398,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '14'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -24574,9 +24574,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '15'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
@@ -24750,9 +24750,9 @@ suite claef
           task 001
             trigger 927 == complete and minim == complete and canari == complete and pertsurf == complete
             edit MEMBER '16'
-            edit NP '384'
-            edit NPRGPNS '16'
-            edit NPRGPEW '24'
+            edit NP '96'
+            edit NPRGPNS '8'
+            edit NPRGPEW '12'
             edit CLASS 'tp'
             edit STOCH '1'
             edit PERTSU '1'
