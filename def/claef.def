@@ -54,7 +54,7 @@ suite claef
     endfamily
   endfamily
   family runs
-    repeat date DATUM 20221027 20221231 1
+    repeat date DATUM 20221108 20221231 1
     task dummy
       defstatus suspended
       edit NP '1'
@@ -151,7 +151,6 @@ suite claef
       family main
         edit ASSIM '1'
         edit LEADT '60'
-        edit SEDA '1'
         edit PERTS '1'
         edit ARCHIV '1'
         edit TRANSF '1'
@@ -228,6 +227,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf00'
             label run ""
             label info ""
@@ -240,7 +240,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari00'
             label run ""
             label info ""
@@ -404,6 +403,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf01'
             label run ""
             label info ""
@@ -416,7 +416,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari01'
             label run ""
             label info ""
@@ -580,6 +579,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf02'
             label run ""
             label info ""
@@ -592,7 +592,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari02'
             label run ""
             label info ""
@@ -756,6 +755,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf03'
             label run ""
             label info ""
@@ -768,7 +768,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari03'
             label run ""
             label info ""
@@ -932,6 +931,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf04'
             label run ""
             label info ""
@@ -944,7 +944,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari04'
             label run ""
             label info ""
@@ -1108,6 +1107,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf05'
             label run ""
             label info ""
@@ -1120,7 +1120,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari05'
             label run ""
             label info ""
@@ -1284,6 +1283,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf06'
             label run ""
             label info ""
@@ -1296,7 +1296,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari06'
             label run ""
             label info ""
@@ -1460,6 +1459,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf07'
             label run ""
             label info ""
@@ -1472,7 +1472,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari07'
             label run ""
             label info ""
@@ -1636,6 +1635,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf08'
             label run ""
             label info ""
@@ -1648,7 +1648,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari08'
             label run ""
             label info ""
@@ -1812,6 +1811,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf09'
             label run ""
             label info ""
@@ -1824,7 +1824,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari09'
             label run ""
             label info ""
@@ -1988,6 +1987,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf10'
             label run ""
             label info ""
@@ -2000,7 +2000,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari10'
             label run ""
             label info ""
@@ -2164,6 +2163,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf11'
             label run ""
             label info ""
@@ -2176,7 +2176,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari11'
             label run ""
             label info ""
@@ -2340,6 +2339,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf12'
             label run ""
             label info ""
@@ -2352,7 +2352,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari12'
             label run ""
             label info ""
@@ -2516,6 +2515,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf13'
             label run ""
             label info ""
@@ -2528,7 +2528,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari13'
             label run ""
             label info ""
@@ -2692,6 +2691,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf14'
             label run ""
             label info ""
@@ -2704,7 +2704,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari14'
             label run ""
             label info ""
@@ -2868,6 +2867,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf15'
             label run ""
             label info ""
@@ -2880,7 +2880,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari15'
             label run ""
             label info ""
@@ -3044,6 +3043,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf16'
             label run ""
             label info ""
@@ -3056,7 +3056,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari16'
             label run ""
             label info ""
@@ -3246,7 +3245,6 @@ suite claef
       family main
         edit ASSIM '1'
         edit LEADT '60'
-        edit SEDA '1'
         edit PERTS '1'
         edit ARCHIV '1'
         edit TRANSF '1'
@@ -3323,6 +3321,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf00'
             label run ""
             label info ""
@@ -3335,7 +3334,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari00'
             label run ""
             label info ""
@@ -3499,6 +3497,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf01'
             label run ""
             label info ""
@@ -3511,7 +3510,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari01'
             label run ""
             label info ""
@@ -3675,6 +3673,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf02'
             label run ""
             label info ""
@@ -3687,7 +3686,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari02'
             label run ""
             label info ""
@@ -3851,6 +3849,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf03'
             label run ""
             label info ""
@@ -3863,7 +3862,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari03'
             label run ""
             label info ""
@@ -4027,6 +4025,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf04'
             label run ""
             label info ""
@@ -4039,7 +4038,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari04'
             label run ""
             label info ""
@@ -4203,6 +4201,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf05'
             label run ""
             label info ""
@@ -4215,7 +4214,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari05'
             label run ""
             label info ""
@@ -4379,6 +4377,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf06'
             label run ""
             label info ""
@@ -4391,7 +4390,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari06'
             label run ""
             label info ""
@@ -4555,6 +4553,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf07'
             label run ""
             label info ""
@@ -4567,7 +4566,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari07'
             label run ""
             label info ""
@@ -4731,6 +4729,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf08'
             label run ""
             label info ""
@@ -4743,7 +4742,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari08'
             label run ""
             label info ""
@@ -4907,6 +4905,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf09'
             label run ""
             label info ""
@@ -4919,7 +4918,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari09'
             label run ""
             label info ""
@@ -5083,6 +5081,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf10'
             label run ""
             label info ""
@@ -5095,7 +5094,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari10'
             label run ""
             label info ""
@@ -5259,6 +5257,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf11'
             label run ""
             label info ""
@@ -5271,7 +5270,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari11'
             label run ""
             label info ""
@@ -5435,6 +5433,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf12'
             label run ""
             label info ""
@@ -5447,7 +5446,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari12'
             label run ""
             label info ""
@@ -5611,6 +5609,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf13'
             label run ""
             label info ""
@@ -5623,7 +5622,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari13'
             label run ""
             label info ""
@@ -5787,6 +5785,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf14'
             label run ""
             label info ""
@@ -5799,7 +5798,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari14'
             label run ""
             label info ""
@@ -5963,6 +5961,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf15'
             label run ""
             label info ""
@@ -5975,7 +5974,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari15'
             label run ""
             label info ""
@@ -6139,6 +6137,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf16'
             label run ""
             label info ""
@@ -6151,7 +6150,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari16'
             label run ""
             label info ""
@@ -6341,7 +6339,6 @@ suite claef
       family main
         edit ASSIM '1'
         edit LEADT '60'
-        edit SEDA '1'
         edit PERTS '1'
         edit ARCHIV '1'
         edit TRANSF '1'
@@ -6418,6 +6415,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf00'
             label run ""
             label info ""
@@ -6430,7 +6428,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari00'
             label run ""
             label info ""
@@ -6594,6 +6591,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf01'
             label run ""
             label info ""
@@ -6606,7 +6604,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari01'
             label run ""
             label info ""
@@ -6770,6 +6767,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf02'
             label run ""
             label info ""
@@ -6782,7 +6780,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari02'
             label run ""
             label info ""
@@ -6946,6 +6943,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf03'
             label run ""
             label info ""
@@ -6958,7 +6956,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari03'
             label run ""
             label info ""
@@ -7122,6 +7119,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf04'
             label run ""
             label info ""
@@ -7134,7 +7132,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari04'
             label run ""
             label info ""
@@ -7298,6 +7295,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf05'
             label run ""
             label info ""
@@ -7310,7 +7308,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari05'
             label run ""
             label info ""
@@ -7474,6 +7471,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf06'
             label run ""
             label info ""
@@ -7486,7 +7484,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari06'
             label run ""
             label info ""
@@ -7650,6 +7647,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf07'
             label run ""
             label info ""
@@ -7662,7 +7660,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari07'
             label run ""
             label info ""
@@ -7826,6 +7823,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf08'
             label run ""
             label info ""
@@ -7838,7 +7836,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari08'
             label run ""
             label info ""
@@ -8002,6 +7999,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf09'
             label run ""
             label info ""
@@ -8014,7 +8012,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari09'
             label run ""
             label info ""
@@ -8178,6 +8175,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf10'
             label run ""
             label info ""
@@ -8190,7 +8188,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari10'
             label run ""
             label info ""
@@ -8354,6 +8351,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf11'
             label run ""
             label info ""
@@ -8366,7 +8364,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari11'
             label run ""
             label info ""
@@ -8530,6 +8527,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf12'
             label run ""
             label info ""
@@ -8542,7 +8540,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari12'
             label run ""
             label info ""
@@ -8706,6 +8703,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf13'
             label run ""
             label info ""
@@ -8718,7 +8716,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari13'
             label run ""
             label info ""
@@ -8882,6 +8879,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf14'
             label run ""
             label info ""
@@ -8894,7 +8892,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari14'
             label run ""
             label info ""
@@ -9058,6 +9055,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf15'
             label run ""
             label info ""
@@ -9070,7 +9068,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari15'
             label run ""
             label info ""
@@ -9234,6 +9231,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf16'
             label run ""
             label info ""
@@ -9246,7 +9244,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari16'
             label run ""
             label info ""
@@ -9436,7 +9433,6 @@ suite claef
       family main
         edit ASSIM '1'
         edit LEADT '60'
-        edit SEDA '1'
         edit PERTS '1'
         edit ARCHIV '1'
         edit TRANSF '1'
@@ -9513,6 +9509,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf00'
             label run ""
             label info ""
@@ -9525,7 +9522,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari00'
             label run ""
             label info ""
@@ -9689,6 +9685,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf01'
             label run ""
             label info ""
@@ -9701,7 +9698,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari01'
             label run ""
             label info ""
@@ -9865,6 +9861,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf02'
             label run ""
             label info ""
@@ -9877,7 +9874,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari02'
             label run ""
             label info ""
@@ -10041,6 +10037,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf03'
             label run ""
             label info ""
@@ -10053,7 +10050,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari03'
             label run ""
             label info ""
@@ -10217,6 +10213,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf04'
             label run ""
             label info ""
@@ -10229,7 +10226,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari04'
             label run ""
             label info ""
@@ -10393,6 +10389,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf05'
             label run ""
             label info ""
@@ -10405,7 +10402,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari05'
             label run ""
             label info ""
@@ -10569,6 +10565,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf06'
             label run ""
             label info ""
@@ -10581,7 +10578,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari06'
             label run ""
             label info ""
@@ -10745,6 +10741,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf07'
             label run ""
             label info ""
@@ -10757,7 +10754,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari07'
             label run ""
             label info ""
@@ -10921,6 +10917,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf08'
             label run ""
             label info ""
@@ -10933,7 +10930,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari08'
             label run ""
             label info ""
@@ -11097,6 +11093,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf09'
             label run ""
             label info ""
@@ -11109,7 +11106,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari09'
             label run ""
             label info ""
@@ -11273,6 +11269,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf10'
             label run ""
             label info ""
@@ -11285,7 +11282,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari10'
             label run ""
             label info ""
@@ -11449,6 +11445,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf11'
             label run ""
             label info ""
@@ -11461,7 +11458,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari11'
             label run ""
             label info ""
@@ -11625,6 +11621,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf12'
             label run ""
             label info ""
@@ -11637,7 +11634,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari12'
             label run ""
             label info ""
@@ -11801,6 +11797,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf13'
             label run ""
             label info ""
@@ -11813,7 +11810,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari13'
             label run ""
             label info ""
@@ -11977,6 +11973,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf14'
             label run ""
             label info ""
@@ -11989,7 +11986,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari14'
             label run ""
             label info ""
@@ -12153,6 +12149,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf15'
             label run ""
             label info ""
@@ -12165,7 +12162,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari15'
             label run ""
             label info ""
@@ -12329,6 +12325,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf16'
             label run ""
             label info ""
@@ -12341,7 +12338,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari16'
             label run ""
             label info ""
@@ -12531,7 +12527,6 @@ suite claef
       family main
         edit ASSIM '1'
         edit LEADT '60'
-        edit SEDA '1'
         edit PERTS '1'
         edit ARCHIV '1'
         edit TRANSF '1'
@@ -12608,6 +12603,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf00'
             label run ""
             label info ""
@@ -12620,7 +12616,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari00'
             label run ""
             label info ""
@@ -12784,6 +12779,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf01'
             label run ""
             label info ""
@@ -12796,7 +12792,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari01'
             label run ""
             label info ""
@@ -12960,6 +12955,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf02'
             label run ""
             label info ""
@@ -12972,7 +12968,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari02'
             label run ""
             label info ""
@@ -13136,6 +13131,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf03'
             label run ""
             label info ""
@@ -13148,7 +13144,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari03'
             label run ""
             label info ""
@@ -13312,6 +13307,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf04'
             label run ""
             label info ""
@@ -13324,7 +13320,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari04'
             label run ""
             label info ""
@@ -13488,6 +13483,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf05'
             label run ""
             label info ""
@@ -13500,7 +13496,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari05'
             label run ""
             label info ""
@@ -13664,6 +13659,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf06'
             label run ""
             label info ""
@@ -13676,7 +13672,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari06'
             label run ""
             label info ""
@@ -13840,6 +13835,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf07'
             label run ""
             label info ""
@@ -13852,7 +13848,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari07'
             label run ""
             label info ""
@@ -14016,6 +14011,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf08'
             label run ""
             label info ""
@@ -14028,7 +14024,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari08'
             label run ""
             label info ""
@@ -14192,6 +14187,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf09'
             label run ""
             label info ""
@@ -14204,7 +14200,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari09'
             label run ""
             label info ""
@@ -14368,6 +14363,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf10'
             label run ""
             label info ""
@@ -14380,7 +14376,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari10'
             label run ""
             label info ""
@@ -14544,6 +14539,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf11'
             label run ""
             label info ""
@@ -14556,7 +14552,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari11'
             label run ""
             label info ""
@@ -14720,6 +14715,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf12'
             label run ""
             label info ""
@@ -14732,7 +14728,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari12'
             label run ""
             label info ""
@@ -14896,6 +14891,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf13'
             label run ""
             label info ""
@@ -14908,7 +14904,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari13'
             label run ""
             label info ""
@@ -15072,6 +15067,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf14'
             label run ""
             label info ""
@@ -15084,7 +15080,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari14'
             label run ""
             label info ""
@@ -15248,6 +15243,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf15'
             label run ""
             label info ""
@@ -15260,7 +15256,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari15'
             label run ""
             label info ""
@@ -15424,6 +15419,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf16'
             label run ""
             label info ""
@@ -15436,7 +15432,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari16'
             label run ""
             label info ""
@@ -15626,7 +15621,6 @@ suite claef
       family main
         edit ASSIM '1'
         edit LEADT '60'
-        edit SEDA '1'
         edit PERTS '1'
         edit ARCHIV '1'
         edit TRANSF '1'
@@ -15703,6 +15697,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf00'
             label run ""
             label info ""
@@ -15715,7 +15710,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari00'
             label run ""
             label info ""
@@ -15879,6 +15873,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf01'
             label run ""
             label info ""
@@ -15891,7 +15886,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari01'
             label run ""
             label info ""
@@ -16055,6 +16049,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf02'
             label run ""
             label info ""
@@ -16067,7 +16062,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari02'
             label run ""
             label info ""
@@ -16231,6 +16225,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf03'
             label run ""
             label info ""
@@ -16243,7 +16238,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari03'
             label run ""
             label info ""
@@ -16407,6 +16401,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf04'
             label run ""
             label info ""
@@ -16419,7 +16414,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari04'
             label run ""
             label info ""
@@ -16583,6 +16577,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf05'
             label run ""
             label info ""
@@ -16595,7 +16590,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari05'
             label run ""
             label info ""
@@ -16759,6 +16753,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf06'
             label run ""
             label info ""
@@ -16771,7 +16766,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari06'
             label run ""
             label info ""
@@ -16935,6 +16929,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf07'
             label run ""
             label info ""
@@ -16947,7 +16942,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari07'
             label run ""
             label info ""
@@ -17111,6 +17105,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf08'
             label run ""
             label info ""
@@ -17123,7 +17118,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari08'
             label run ""
             label info ""
@@ -17287,6 +17281,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf09'
             label run ""
             label info ""
@@ -17299,7 +17294,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari09'
             label run ""
             label info ""
@@ -17463,6 +17457,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf10'
             label run ""
             label info ""
@@ -17475,7 +17470,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari10'
             label run ""
             label info ""
@@ -17639,6 +17633,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf11'
             label run ""
             label info ""
@@ -17651,7 +17646,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari11'
             label run ""
             label info ""
@@ -17815,6 +17809,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf12'
             label run ""
             label info ""
@@ -17827,7 +17822,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari12'
             label run ""
             label info ""
@@ -17991,6 +17985,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf13'
             label run ""
             label info ""
@@ -18003,7 +17998,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari13'
             label run ""
             label info ""
@@ -18167,6 +18161,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf14'
             label run ""
             label info ""
@@ -18179,7 +18174,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari14'
             label run ""
             label info ""
@@ -18343,6 +18337,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf15'
             label run ""
             label info ""
@@ -18355,7 +18350,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari15'
             label run ""
             label info ""
@@ -18519,6 +18513,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf16'
             label run ""
             label info ""
@@ -18531,7 +18526,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari16'
             label run ""
             label info ""
@@ -18721,7 +18715,6 @@ suite claef
       family main
         edit ASSIM '1'
         edit LEADT '60'
-        edit SEDA '1'
         edit PERTS '1'
         edit ARCHIV '1'
         edit TRANSF '1'
@@ -18798,6 +18791,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf00'
             label run ""
             label info ""
@@ -18810,7 +18804,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari00'
             label run ""
             label info ""
@@ -18974,6 +18967,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf01'
             label run ""
             label info ""
@@ -18986,7 +18980,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari01'
             label run ""
             label info ""
@@ -19150,6 +19143,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf02'
             label run ""
             label info ""
@@ -19162,7 +19156,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari02'
             label run ""
             label info ""
@@ -19326,6 +19319,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf03'
             label run ""
             label info ""
@@ -19338,7 +19332,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari03'
             label run ""
             label info ""
@@ -19502,6 +19495,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf04'
             label run ""
             label info ""
@@ -19514,7 +19508,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari04'
             label run ""
             label info ""
@@ -19678,6 +19671,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf05'
             label run ""
             label info ""
@@ -19690,7 +19684,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari05'
             label run ""
             label info ""
@@ -19854,6 +19847,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf06'
             label run ""
             label info ""
@@ -19866,7 +19860,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari06'
             label run ""
             label info ""
@@ -20030,6 +20023,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf07'
             label run ""
             label info ""
@@ -20042,7 +20036,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari07'
             label run ""
             label info ""
@@ -20206,6 +20199,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf08'
             label run ""
             label info ""
@@ -20218,7 +20212,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari08'
             label run ""
             label info ""
@@ -20382,6 +20375,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf09'
             label run ""
             label info ""
@@ -20394,7 +20388,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari09'
             label run ""
             label info ""
@@ -20558,6 +20551,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf10'
             label run ""
             label info ""
@@ -20570,7 +20564,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari10'
             label run ""
             label info ""
@@ -20734,6 +20727,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf11'
             label run ""
             label info ""
@@ -20746,7 +20740,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari11'
             label run ""
             label info ""
@@ -20910,6 +20903,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf12'
             label run ""
             label info ""
@@ -20922,7 +20916,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari12'
             label run ""
             label info ""
@@ -21086,6 +21079,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf13'
             label run ""
             label info ""
@@ -21098,7 +21092,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari13'
             label run ""
             label info ""
@@ -21262,6 +21255,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf14'
             label run ""
             label info ""
@@ -21274,7 +21268,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari14'
             label run ""
             label info ""
@@ -21438,6 +21431,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf15'
             label run ""
             label info ""
@@ -21450,7 +21444,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari15'
             label run ""
             label info ""
@@ -21614,6 +21607,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf16'
             label run ""
             label info ""
@@ -21626,7 +21620,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari16'
             label run ""
             label info ""
@@ -21816,7 +21809,6 @@ suite claef
       family main
         edit ASSIM '1'
         edit LEADT '60'
-        edit SEDA '1'
         edit PERTS '1'
         edit ARCHIV '1'
         edit TRANSF '1'
@@ -21893,6 +21885,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf00'
             label run ""
             label info ""
@@ -21905,7 +21898,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari00'
             label run ""
             label info ""
@@ -22069,6 +22061,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf01'
             label run ""
             label info ""
@@ -22081,7 +22074,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari01'
             label run ""
             label info ""
@@ -22245,6 +22237,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf02'
             label run ""
             label info ""
@@ -22257,7 +22250,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari02'
             label run ""
             label info ""
@@ -22421,6 +22413,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf03'
             label run ""
             label info ""
@@ -22433,7 +22426,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari03'
             label run ""
             label info ""
@@ -22597,6 +22589,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf04'
             label run ""
             label info ""
@@ -22609,7 +22602,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari04'
             label run ""
             label info ""
@@ -22773,6 +22765,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf05'
             label run ""
             label info ""
@@ -22785,7 +22778,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari05'
             label run ""
             label info ""
@@ -22949,6 +22941,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf06'
             label run ""
             label info ""
@@ -22961,7 +22954,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari06'
             label run ""
             label info ""
@@ -23125,6 +23117,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf07'
             label run ""
             label info ""
@@ -23137,7 +23130,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari07'
             label run ""
             label info ""
@@ -23301,6 +23293,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf08'
             label run ""
             label info ""
@@ -23313,7 +23306,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari08'
             label run ""
             label info ""
@@ -23477,6 +23469,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf09'
             label run ""
             label info ""
@@ -23489,7 +23482,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari09'
             label run ""
             label info ""
@@ -23653,6 +23645,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf10'
             label run ""
             label info ""
@@ -23665,7 +23658,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari10'
             label run ""
             label info ""
@@ -23829,6 +23821,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf11'
             label run ""
             label info ""
@@ -23841,7 +23834,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari11'
             label run ""
             label info ""
@@ -24005,6 +23997,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf12'
             label run ""
             label info ""
@@ -24017,7 +24010,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari12'
             label run ""
             label info ""
@@ -24181,6 +24173,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf13'
             label run ""
             label info ""
@@ -24193,7 +24186,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari13'
             label run ""
             label info ""
@@ -24357,6 +24349,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf14'
             label run ""
             label info ""
@@ -24369,7 +24362,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari14'
             label run ""
             label info ""
@@ -24533,6 +24525,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf15'
             label run ""
             label info ""
@@ -24545,7 +24538,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari15'
             label run ""
             label info ""
@@ -24709,6 +24701,7 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
+            edit SEDA '1'
             edit NAME 'screensurf16'
             label run ""
             label info ""
@@ -24721,7 +24714,6 @@ suite claef
             edit NPRGPNS '1'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit SEDA '1'
             edit NAME 'canari16'
             label run ""
             label info ""
