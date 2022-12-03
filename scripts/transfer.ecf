@@ -209,7 +209,7 @@ if [ ${leadtime} -gt ${assimc} ]; then
 
          done
 
-         if (( ${CHECKTRANS} == 20 || ${CHECKTRANSOK} == 20 ))
+         if (( ${CHECKTRANS} == 21 || ${CHECKTRANSOK} == 21 ))
          then
 
             ecflow_client --label=error "Copying failed, exit"
