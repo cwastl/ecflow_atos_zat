@@ -49,7 +49,7 @@ step15 = False
 
 # assimilation switches
 assimi = True   #assimilation yes/no
-assimm = 0      #number of members without 3DVar
+assimm = 6      #number of members without 3DVar/with ceilometer
 assimc = 3      #assimilation cycle in hours
 eda = True      #ensemble data assimilation
 seda = True     #surface eda

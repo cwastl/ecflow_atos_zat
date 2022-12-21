@@ -129,6 +129,9 @@ ectrans -gateway ecaccess.zamg.ac.at -remote ${fectrans} -get -source /EGVAP/OBS
 #BUFRTEMP
 ectrans -gateway ecaccess.zamg.ac.at -remote ${fectrans} -get -source /../../modelle/prod/mgruppe/OBS/ODB/${date}/bufr.temp_${date}${run} -overwrite -verbose
 
+#CEILOMETER
+ectrans -gateway ecaccess.zamg.ac.at -remote nwpmodelle -get -source /../../../OBSERVATIONS/CEILOMETER/${date}/obsoul_6_qc_${date}_${run}00.asc -overwrite -verbose
+
 if [[ ${TRANSOK} -ge 1 ]]
 then
    echo "observations available"

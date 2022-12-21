@@ -54,7 +54,7 @@ suite claef
     endfamily
   endfamily
   family runs
-    repeat date DATUM 20221108 20221231 1
+    repeat date DATUM 20221221 20221231 1
     task dummy
       defstatus suspended
       edit NP '1'
@@ -251,7 +251,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim00'
             label run ""
@@ -427,7 +427,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim01'
             label run ""
@@ -603,7 +603,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim02'
             label run ""
@@ -779,7 +779,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim03'
             label run ""
@@ -955,7 +955,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim04'
             label run ""
@@ -1131,7 +1131,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim05'
             label run ""
@@ -1307,7 +1307,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim06'
             label run ""
@@ -1483,7 +1483,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim07'
             label run ""
@@ -1659,7 +1659,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim08'
             label run ""
@@ -1835,7 +1835,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim09'
             label run ""
@@ -2011,7 +2011,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim10'
             label run ""
@@ -2187,7 +2187,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim11'
             label run ""
@@ -2363,7 +2363,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim12'
             label run ""
@@ -2539,7 +2539,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim13'
             label run ""
@@ -2715,7 +2715,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim14'
             label run ""
@@ -2891,7 +2891,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim15'
             label run ""
@@ -3067,7 +3067,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim16'
             label run ""
@@ -3345,7 +3345,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim00'
             label run ""
@@ -3521,7 +3521,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim01'
             label run ""
@@ -3697,7 +3697,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim02'
             label run ""
@@ -3873,7 +3873,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim03'
             label run ""
@@ -4049,7 +4049,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim04'
             label run ""
@@ -4225,7 +4225,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim05'
             label run ""
@@ -4401,7 +4401,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim06'
             label run ""
@@ -4577,7 +4577,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim07'
             label run ""
@@ -4753,7 +4753,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim08'
             label run ""
@@ -4929,7 +4929,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim09'
             label run ""
@@ -5105,7 +5105,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim10'
             label run ""
@@ -5281,7 +5281,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim11'
             label run ""
@@ -5457,7 +5457,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim12'
             label run ""
@@ -5633,7 +5633,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim13'
             label run ""
@@ -5809,7 +5809,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim14'
             label run ""
@@ -5985,7 +5985,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim15'
             label run ""
@@ -6161,7 +6161,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim16'
             label run ""
@@ -6439,7 +6439,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim00'
             label run ""
@@ -6615,7 +6615,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim01'
             label run ""
@@ -6791,7 +6791,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim02'
             label run ""
@@ -6967,7 +6967,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim03'
             label run ""
@@ -7143,7 +7143,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim04'
             label run ""
@@ -7319,7 +7319,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim05'
             label run ""
@@ -7495,7 +7495,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim06'
             label run ""
@@ -7671,7 +7671,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim07'
             label run ""
@@ -7847,7 +7847,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim08'
             label run ""
@@ -8023,7 +8023,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim09'
             label run ""
@@ -8199,7 +8199,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim10'
             label run ""
@@ -8375,7 +8375,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim11'
             label run ""
@@ -8551,7 +8551,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim12'
             label run ""
@@ -8727,7 +8727,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim13'
             label run ""
@@ -8903,7 +8903,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim14'
             label run ""
@@ -9079,7 +9079,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim15'
             label run ""
@@ -9255,7 +9255,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim16'
             label run ""
@@ -9533,7 +9533,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim00'
             label run ""
@@ -9709,7 +9709,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim01'
             label run ""
@@ -9885,7 +9885,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim02'
             label run ""
@@ -10061,7 +10061,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim03'
             label run ""
@@ -10237,7 +10237,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim04'
             label run ""
@@ -10413,7 +10413,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim05'
             label run ""
@@ -10589,7 +10589,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim06'
             label run ""
@@ -10765,7 +10765,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim07'
             label run ""
@@ -10941,7 +10941,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim08'
             label run ""
@@ -11117,7 +11117,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim09'
             label run ""
@@ -11293,7 +11293,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim10'
             label run ""
@@ -11469,7 +11469,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim11'
             label run ""
@@ -11645,7 +11645,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim12'
             label run ""
@@ -11821,7 +11821,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim13'
             label run ""
@@ -11997,7 +11997,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim14'
             label run ""
@@ -12173,7 +12173,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim15'
             label run ""
@@ -12349,7 +12349,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim16'
             label run ""
@@ -12627,7 +12627,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim00'
             label run ""
@@ -12803,7 +12803,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim01'
             label run ""
@@ -12979,7 +12979,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim02'
             label run ""
@@ -13155,7 +13155,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim03'
             label run ""
@@ -13331,7 +13331,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim04'
             label run ""
@@ -13507,7 +13507,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim05'
             label run ""
@@ -13683,7 +13683,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim06'
             label run ""
@@ -13859,7 +13859,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim07'
             label run ""
@@ -14035,7 +14035,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim08'
             label run ""
@@ -14211,7 +14211,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim09'
             label run ""
@@ -14387,7 +14387,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim10'
             label run ""
@@ -14563,7 +14563,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim11'
             label run ""
@@ -14739,7 +14739,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim12'
             label run ""
@@ -14915,7 +14915,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim13'
             label run ""
@@ -15091,7 +15091,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim14'
             label run ""
@@ -15267,7 +15267,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim15'
             label run ""
@@ -15443,7 +15443,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim16'
             label run ""
@@ -15721,7 +15721,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim00'
             label run ""
@@ -15897,7 +15897,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim01'
             label run ""
@@ -16073,7 +16073,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim02'
             label run ""
@@ -16249,7 +16249,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim03'
             label run ""
@@ -16425,7 +16425,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim04'
             label run ""
@@ -16601,7 +16601,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim05'
             label run ""
@@ -16777,7 +16777,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim06'
             label run ""
@@ -16953,7 +16953,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim07'
             label run ""
@@ -17129,7 +17129,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim08'
             label run ""
@@ -17305,7 +17305,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim09'
             label run ""
@@ -17481,7 +17481,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim10'
             label run ""
@@ -17657,7 +17657,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim11'
             label run ""
@@ -17833,7 +17833,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim12'
             label run ""
@@ -18009,7 +18009,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim13'
             label run ""
@@ -18185,7 +18185,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim14'
             label run ""
@@ -18361,7 +18361,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim15'
             label run ""
@@ -18537,7 +18537,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim16'
             label run ""
@@ -18815,7 +18815,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim00'
             label run ""
@@ -18991,7 +18991,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim01'
             label run ""
@@ -19167,7 +19167,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim02'
             label run ""
@@ -19343,7 +19343,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim03'
             label run ""
@@ -19519,7 +19519,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim04'
             label run ""
@@ -19695,7 +19695,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim05'
             label run ""
@@ -19871,7 +19871,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim06'
             label run ""
@@ -20047,7 +20047,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim07'
             label run ""
@@ -20223,7 +20223,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim08'
             label run ""
@@ -20399,7 +20399,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim09'
             label run ""
@@ -20575,7 +20575,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim10'
             label run ""
@@ -20751,7 +20751,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim11'
             label run ""
@@ -20927,7 +20927,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim12'
             label run ""
@@ -21103,7 +21103,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim13'
             label run ""
@@ -21279,7 +21279,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim14'
             label run ""
@@ -21455,7 +21455,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim15'
             label run ""
@@ -21631,7 +21631,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim16'
             label run ""
@@ -21909,7 +21909,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim00'
             label run ""
@@ -22085,7 +22085,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim01'
             label run ""
@@ -22261,7 +22261,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim02'
             label run ""
@@ -22437,7 +22437,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim03'
             label run ""
@@ -22613,7 +22613,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim04'
             label run ""
@@ -22789,7 +22789,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim05'
             label run ""
@@ -22965,7 +22965,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim06'
             label run ""
@@ -23141,7 +23141,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim07'
             label run ""
@@ -23317,7 +23317,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim08'
             label run ""
@@ -23493,7 +23493,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim09'
             label run ""
@@ -23669,7 +23669,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim10'
             label run ""
@@ -23845,7 +23845,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim11'
             label run ""
@@ -24021,7 +24021,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim12'
             label run ""
@@ -24197,7 +24197,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim13'
             label run ""
@@ -24373,7 +24373,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim14'
             label run ""
@@ -24549,7 +24549,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim15'
             label run ""
@@ -24725,7 +24725,7 @@ suite claef
             edit NPRGPNS '36'
             edit NPRGPEW '1'
             edit CLASS 'tf'
-            edit ASSIMM '0'
+            edit ASSIMM '6'
             edit ENSJK '1'
             edit NAME 'minim16'
             label run ""
