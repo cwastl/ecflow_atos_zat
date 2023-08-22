@@ -76,7 +76,7 @@ n_io_serv=0
 # SBU account, cluster and user name, logport
 account = "atlaef";
 schost  = "hpc";
-sthost  = "ws1";
+sthost  = "ws2";
 user    = "zat";
 
 # main runs time schedule
@@ -435,7 +435,8 @@ def family_main():
                      NP=36,
                      NPRGPNS=36,
                      NPRGPEW=1,
-                     CLASS='tf',
+                     NNODES=2,
+                     CLASS='tp',
                      EDA=eda,
                      NAME="screen{:02d}".format(mem),
                   ),
@@ -493,7 +494,8 @@ def family_main():
                      NP=36,
                      NPRGPNS=36,
                      NPRGPEW=1,
-                     CLASS='tf',
+                     CLASS='tp',
+                     NNODES='2',
                      ASSIMM=assimm,
                      ENSJK=enjk,
                      NAME="minim{:02d}".format(mem),
