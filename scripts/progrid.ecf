@@ -92,9 +92,17 @@ if [ ${leadtime} -gt ${assimc} ]; then
     do
       if [ ${min} == "00" ]; then
         if [ ${mem} == "00" ]; then
-          FPOSOUTS=${FPOSOUTSIZECTL}
+          if [ ${step} -eq 0 ]; then
+            FPOSOUTS=${FPOSOUTSIZECTL_0}
+          else
+            FPOSOUTS=${FPOSOUTSIZECTL}
+          fi 
         else
-          FPOSOUTS=${FPOSOUTSIZE}
+          if [ ${step} -eq 0 ]; then
+            FPOSOUTS=${FPOSOUTSIZE_0}
+          else
+            FPOSOUTS=${FPOSOUTSIZE}
+          fi 
         fi
       else
         FPOSOUTS=${FPOSOUTSIZE15}
@@ -118,9 +126,17 @@ if [ ${leadtime} -gt ${assimc} ]; then
           ecflow_client --label=info "Check field number ${step}"
 
           if [ ${mem} == "00" ] ; then
-             PROGRIDNBR=$PROGRIDOUTNBRCTL
+             if [ ${step} -eq 0 ]; then
+                PROGRIDNBR=$PROGRIDOUTNBRCTL_0
+             else
+                PROGRIDNBR=$PROGRIDOUTNBRCTL
+             fi
           else
-             PROGRIDNBR=$PROGRIDOUTNBR
+             if [ ${step} -eq 0 ]; then
+                PROGRIDNBR=$PROGRIDOUTNBR_0
+             else
+                PROGRIDNBR=$PROGRIDOUTNBR
+             fi
           fi
 
           if [ $(grib_count GRIDBIZARRE) -ne ${PROGRIDNBR} ]

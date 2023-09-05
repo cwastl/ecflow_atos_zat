@@ -97,18 +97,27 @@ if [ ${leadtime} -gt ${assimc} ]; then
       INFILE=$PROGRIDDIR/CLAEF${mem}+${cstep}:${min}".grb"
       OUTFILE=$ADDGRIBDIR/CLAEF${mem}+${cstep}:${min}".grb"
 
-      if [ ${step} -gt 0 ]
-      then
-         OUTFILE_OLD=$ADDGRIBDIR/CLAEF${mem}+${cstep2}:${min}".grb"
-      else
+      if [ ${step} -eq 0 ]; then
          OUTFILE_OLD=$ADDGRIBDIR/CLAEF${mem}+0000:${min}".grb"
+      elif [ ${step} -eq 1 ]; then
+         OUTFILE_OLD=$CLIMDIR/CLAEF00+XXX.grb_precip0
+      else
+         OUTFILE_OLD=$ADDGRIBDIR/CLAEF${mem}+${cstep2}:${min}".grb"
       fi
  
       if [ ${min} == "00" ]; then
         if [ ${mem} == "00" ]; then
-          PROGRIDOUTS=${PROGRIDOUTSIZECTL}
+          if [ ${step} -eq 0 ] ; then
+             PROGRIDOUTS=${PROGRIDOUTSIZECTL_0}
+          else
+             PROGRIDOUTS=${PROGRIDOUTSIZECTL}
+          fi
         else
-          PROGRIDOUTS=${PROGRIDOUTSIZE}
+          if [ ${step} -eq 0 ] ; then
+             PROGRIDOUTS=${PROGRIDOUTSIZE_0}
+          else
+             PROGRIDOUTS=${PROGRIDOUTSIZE}
+          fi
         fi
         (( PROGRIDOUTS1=${PROGRIDOUTS}*0.97 ))
         (( PROGRIDOUTS2=${PROGRIDOUTS}*1.03 ))
@@ -189,20 +198,24 @@ if [ ${leadtime} -gt ${assimc} ]; then
               # Add Total precipitation to the grib:
               ##############################################
 
-              APCPGRIB=${ADDGRIBDIR}/apcp+${cstep}.grb
-              ln -sf ${BINDIR}/arometotalprec .
-              echo "Calculate total prec for CLAEF${mem}+" ${cstep} ":00.grb"
-              ecflow_client --label=info "Calculate total prec for CLAEF${mem}+${cstep}:00.grb"
-              ./arometotalprec ${OUTFILE} ${APCPGRIB} >> ${LOGDIR}/ADDGRIB_${cstep}_%ECF_TRYNO%_${mem}.log 2>&1
+              if [ ${step} -gt 0 ] ; then
+              
+                 APCPGRIB=${ADDGRIBDIR}/apcp+${cstep}.grb
+                 ln -sf ${BINDIR}/arometotalprec .
+                 echo "Calculate total prec for CLAEF${mem}+" ${cstep} ":00.grb"
+                 ecflow_client --label=info "Calculate total prec for CLAEF${mem}+${cstep}:00.grb"
+                 ./arometotalprec ${OUTFILE} ${APCPGRIB} >> ${LOGDIR}/ADDGRIB_${cstep}_%ECF_TRYNO%_${mem}.log 2>&1
   
-              if (( $? != 0 )); then
-                ecflow_client --label=error "Total prec not ok" 
-                echo "Total prec not ok"
-                exit 1
-              fi
+                 if (( $? != 0 )); then
+                   ecflow_client --label=error "Total prec not ok" 
+                   echo "Total prec not ok"
+                   exit 1
+                 fi
 
-              cat ${APCPGRIB} >> ${OUTFILE}
-              rm -f ${APCPGRIB:="xxx"}
+                 cat ${APCPGRIB} >> ${OUTFILE}
+                 rm -f ${APCPGRIB:="xxx"}
+
+              fi
 
               ######################################################
               # Add convective initiation temperature to the grib: #
@@ -265,20 +278,23 @@ if [ ${leadtime} -gt ${assimc} ]; then
               # Add ww symbols #
               ##################
 
-              WWGRIB=${ADDGRIBDIR}/ww+${cstep}.grb
-              ln -sf  ${BINDIR}/arome_symbol_ww .
-              echo "Calculate ww symbols for CLAEF${mem}+" ${cstep} ":00.grb"
-              ecflow_client --label=info "Calculate ww symbols for CLAEF${mem}+${cstep}.grb"
-              ./arome_symbol_ww ${OUTFILE_OLD} ${OUTFILE} ${WWGRIB}  >> ${LOGDIR}/ADDGRIB_${cstep}_%ECF_TRYNO%_${mem}.log 2>&1
+              if [ ${step} -gt 0 ] ; then
+                 WWGRIB=${ADDGRIBDIR}/ww+${cstep}.grb
+                 ln -sf  ${BINDIR}/arome_symbol_ww .
+                 echo "Calculate ww symbols for CLAEF${mem}+" ${cstep} ":00.grb"
+                 ecflow_client --label=info "Calculate ww symbols for CLAEF${mem}+${cstep}.grb"
+                 ./arome_symbol_ww ${OUTFILE_OLD} ${OUTFILE} ${WWGRIB}  >> ${LOGDIR}/ADDGRIB_${cstep}_%ECF_TRYNO%_${mem}.log 2>&1
 
-              if (( $? != 0 )); then
-                ecflow_client --label=error "ww symb not ok"
-                echo "ww symb not ok"
-                exit 1
+                 if (( $? != 0 )); then
+                   ecflow_client --label=error "ww symb not ok"
+                   echo "ww symb not ok"
+                   exit 1
+                 fi
+
+                 cat ${WWGRIB} >> ${OUTFILE}
+                 rm -f ${WWGRIB:="xxx"}
+
               fi
-
-              cat ${WWGRIB} >> ${OUTFILE}
-              rm -f ${WWGRIB:="xxx"}
 
               if [ ${mem} == "00" ] ; then
      
@@ -330,9 +346,17 @@ if [ ${leadtime} -gt ${assimc} ]; then
               (( stepfail = 0 )) 
 
               if [ ${mem} == "00" ] ; then
-                 ADDGRIBNBR=$ADDGRIBOUTNBRCTL
+                 if [ ${step} -eq 0 ] ; then
+                    ADDGRIBNBR=$ADDGRIBOUTNBRCTL_0
+                 else
+                    ADDGRIBNBR=$ADDGRIBOUTNBRCTL
+                 fi
               else
-                 ADDGRIBNBR=$ADDGRIBOUTNBR
+                 if [ ${step} -eq 0 ] ; then
+                    ADDGRIBNBR=$ADDGRIBOUTNBR_0
+                 else
+                    ADDGRIBNBR=$ADDGRIBOUTNBR
+                 fi
               fi
 
               while (( $stepfail < 10 )) ; do
@@ -373,9 +397,17 @@ if [ ${leadtime} -gt ${assimc} ]; then
               (( stepfail = 0 )) 
 
               if [ ${mem} == "00" ] ; then
-                 ADDGRIBNBR=$ADDGRIBOUTNBRCTL
+                 if [ ${step} -eq 0 ] ; then
+                    ADDGRIBNBR=$ADDGRIBOUTNBRCTL_0
+                 else
+                    ADDGRIBNBR=$ADDGRIBOUTNBRCTL
+                 fi
               else
-                 ADDGRIBNBR=$ADDGRIBOUTNBR
+                 if [ ${step} -eq 0 ] ; then
+                    ADDGRIBNBR=$ADDGRIBOUTNBR_0
+                 else
+                    ADDGRIBNBR=$ADDGRIBOUTNBR
+                 fi
               fi
 
               while (( $stepfail < 10 )) ; do

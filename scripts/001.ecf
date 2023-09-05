@@ -175,13 +175,25 @@ do
   if [[ "$cact_step_min" == "00" ]]
   then
 
-    ln -sf ${NAMELS1} ${RUNDIR}/xxt$cact_step
+    if [[ ${act_step_hh2} == 0 ]]
+    then
+
+       grep -v CLCFU ${NAMELS1} >  xxt00000000_
+       grep -v CLDCFU xxt00000000_ > xxt00000000__
+       mv  xxt00000000__  ${RUNDIR}/xxt${cact_step}
+
+    else
+
+      cp ${NAMELS1} ${RUNDIR}/xxt${cact_step}
+
+    fi
 
   else
 
-    ln -sf ${NAMELSELECT15} $RUNDIR/xxt$cact_step
+    cp ${NAMELSELECT15} $RUNDIR/xxt$cact_step
 
   fi
+
  
   act_step_min=$act_step_min+$steps
 

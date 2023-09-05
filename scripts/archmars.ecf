@@ -105,30 +105,50 @@ while (( ${ICOUNT} <= ${leadtime} )) ; do
       then
         grib_set -ssubCentre=98,centre=224,generatingProcessIdentifier=4,setLocalDefinition=1,localDefinitionNumber=1,marsClass=${class},marsType=${type},marsStream=enfo,perturbationNumber=${mem},numberOfForecastsInEnsemble=${amem} ${ff} foo
 
-        sed -e "s:{endStepInHours_tmp}:${endStepInHours_tmp}:g" \
-            -e "s:{fcstrange}:${fcstrange}:g" ${SETUPDIR}/arch_sfc.filter > sfc.filter
+        
+        if (( $ICOUNT == 0 ))
+        then
 
-        grib_filter -o foo2 sfc.filter foo
+           sed -e "s:{endStepInHours_tmp}:${endStepInHours_tmp}:g" \
+               -e "s:{fcstrange}:${fcstrange}:g" ${SETUPDIR}/arch_sfc.filter_0 > sfc.filter
 
-        cp foo2 ${outfile}
-        rm -f sfc.filter
+           grib_filter -o foo2 sfc.filter foo
 
-# Convert Precip from mm to m =>
-        ecflow_client --label=info "Convert precip to m"
-        wgrib ${outfile} | egrep "(:kpds5=228:|:kpds5=82:|:kpds5=142:|:kpds5=143:|:kpds5=144:)" | wgrib -i -grib ${outfile} -o otto1.tmp
-        grib_set -s scaleValuesBy=0.001 otto1.tmp otto2.tmp
-        wgrib ${outfile} | egrep -v "(:kpds5=228:|:kpds5=82:|:kpds5=142:|:kpds5=143:|:kpds5=144:)" | wgrib -i -grib ${outfile} -o otto3.tmp
-        cat otto3.tmp otto2.tmp > otto4.tmp
+           export GRIB_GRIBEX_MODE_ON=1
+           grib_set -rs bitsPerValue=16,jScansPositively=1,experimentVersionNumber=${ExpVer} foo2 ${outfile}_0
 
-        grib_set -w P1=255 -s P1=0,step=0 otto4.tmp out.grb 
+           rm -f sfc.filter
+           cp ${outfile}_0 ${outfile}_${mem}_${IICOUNT}
 
-        export GRIB_GRIBEX_MODE_ON=1
-        grib_set -rs bitsPerValue=16,jScansPositively=1,experimentVersionNumber=${ExpVer} out.grb ${outfile}
+        else
 
-        rm -f otto*.tmp
+           sed -e "s:{endStepInHours_tmp}:${endStepInHours_tmp}:g" \
+               -e "s:{fcstrange}:${fcstrange}:g" ${SETUPDIR}/arch_sfc.filter > sfc.filter
 
-        cat ${outfile} >> ${outfile}_final
-        mv ${outfile} ${outfile}_${mem}_${IICOUNT}
+           grib_filter -o foo2 sfc.filter foo
+
+           cp foo2 ${outfile}
+           rm -f sfc.filter
+
+           # Convert Precip from mm to m =>
+           ecflow_client --label=info "Convert precip to m"
+           wgrib ${outfile} | egrep "(:kpds5=228:|:kpds5=82:|:kpds5=142:|:kpds5=143:|:kpds5=144:)" | wgrib -i -grib ${outfile} -o otto1.tmp
+           grib_set -s scaleValuesBy=0.001 otto1.tmp otto2.tmp
+           wgrib ${outfile} | egrep -v "(:kpds5=228:|:kpds5=82:|:kpds5=142:|:kpds5=143:|:kpds5=144:)" | wgrib -i -grib ${outfile} -o otto3.tmp
+           cat otto3.tmp otto2.tmp > otto4.tmp
+
+           grib_set -w P1=255 -s P1=0,step=0 otto4.tmp out.grb 
+
+           export GRIB_GRIBEX_MODE_ON=1
+           grib_set -rs bitsPerValue=16,jScansPositively=1,experimentVersionNumber=${ExpVer} out.grb ${outfile}
+
+           rm -f otto*.tmp
+
+           cat ${outfile} >> ${outfile}_final
+           mv ${outfile} ${outfile}_${mem}_${IICOUNT}
+
+        fi
+
 
       elif [ "${ff}" = "splitgrib0001.data" ]
       then
@@ -170,18 +190,33 @@ done
 # sfc file
 rm -f sedscript
 
+echo "s:GRIB:${ARCHIVE},source=${outfile}_0:g" > sedscript
+echo "s:YYYYMMDD:${date}:g" >> sedscript
+echo "s:HHMM:${run}00:g" >> sedscript
+echo "s:EXPERIMENT:${ExpVer}:g" >> sedscript
+echo "s:FCST:0:g" >> sedscript
+echo "s:MEMBER:${mem}:g" >> sedscript
+echo "s:FDOM:${class}:g" >> sedscript
+echo "s:PERTCTRL:${type}:g" >> sedscript
+
+sed -f sedscript ${SETUPDIR}/arch_request_sfc.template_0 > arc.sfc_0
+
+mars arc.sfc_0
+
+# sfc file
+rm -f sedscript
+
 echo "s:GRIB:${ARCHIVE},source=${outfile}_final:g" > sedscript
 echo "s:YYYYMMDD:${date}:g" >> sedscript
 echo "s:HHMM:${run}00:g" >> sedscript
 echo "s:EXPERIMENT:${ExpVer}:g" >> sedscript
-echo "s:FCST:0\/to\/${leadtime}\/by\/1:g" >> sedscript
+echo "s:FCST:1\/to\/${leadtime}\/by\/1:g" >> sedscript
 echo "s:MEMBER:${mem}:g" >> sedscript
 echo "s:FDOM:${class}:g" >> sedscript
 echo "s:PERTCTRL:${type}:g" >> sedscript
 
 sed -f sedscript ${SETUPDIR}/arch_request_sfc.template > arc.sfc
 
-#cat arc.sfc
 mars arc.sfc
 
 # pressure level
