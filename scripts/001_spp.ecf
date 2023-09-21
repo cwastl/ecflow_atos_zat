@@ -178,11 +178,22 @@ do
   if [[ "$cact_step_min" == "00" ]]
   then
 
-    ln -sf ${NAMELS1} ${RUNDIR}/xxt$cact_step
+    if [[ ${act_step_hh2} == 0 ]]
+    then
+
+       grep -v CLCFU ${NAMELS1} >  xxt00000000_
+       grep -v CLDCFU xxt00000000_ > xxt00000000__
+       mv  xxt00000000__  ${RUNDIR}/xxt${cact_step}
+
+    else
+
+      cp ${NAMELS1} ${RUNDIR}/xxt${cact_step}
+
+    fi
 
   else
 
-    ln -sf ${NAMELSELECT15} $RUNDIR/xxt$cact_step
+    cp ${NAMELSELECT15} $RUNDIR/xxt$cact_step
 
   fi
  
@@ -212,7 +223,9 @@ then
       -e   "s/{inhydro}/${INHYDRO}/"\
       -e   "s/NFRPOS=60,/NFRPOS=${steps},/"\
       -e   "s/ ! CNPPATH='.',/  CNPPATH='.',/"\
-      -e   "s/{fcstrange}/${leadtime}/g" ${NAMEL001}_spp+spg > $RUNDIR/fort.4
+      -e   "s/{fcstrange}/${leadtime}/g" ${NAMEL001} > $RUNDIR/fort.4
+
+  ln -sf ${NAMEL001SURFEX} $RUNDIR/EXSEG2.nam
 
 else
 
@@ -248,17 +261,22 @@ else
       -e   "s/NSEED_SDT=60/NSEED_SDT=${seedm}/"\
       -e   "s/NENSFNB=0/NENSFNB=${seedm}/"\
       -e   "s/NFRPOS=60,/NFRPOS=${steps},/"\
+      -e   "s/RCRIAUTI=0.0002,/RCRIAUTI=7.53E-5,/"\
+      -e   "s/RT0CRIAUTI=-5.,/RT0CRIAUTI=-12.0,/"\
+      -e   "s/RCRIAUTC=0.001,/RCRIAUTC=6.3E-4,/"\
       -e   "s/ ! CNPPATH='.',/  CNPPATH='.',/"\
-      -e   "s/SLHDEPSH=0.040/SLHDEPSH=${AT2}/"\
-      -e   "s/{fcstrange}/${leadtime}/g" ${NAMEL001}_spp+spg > $RUNDIR/fort.4
+      -e   "s/SLHDEPSH=0.08/SLHDEPSH=${AT2}/"\
+      -e   "s/{fcstrange}/${leadtime}/g" ${NAMEL001} > $RUNDIR/fort.4
+
+  sed -e "s/XFRACZ0=10.,/XFRACZ0=5.,/g" ${NAMEL001SURFEX} > $RUNDIR/EXSEG2.nam
 
 fi  
 
 if [[ $mem == "00" || $pertsurf -eq 0 ]]
 then
-  ln -sf ${NAMEL001SURFEX} $RUNDIR/EXSEG1.nam
+  ln -sf $RUNDIR/EXSEG2.nam $RUNDIR/EXSEG1.nam
 else
-  sed -e "s/LPERTSURF=.F./LPERTSURF=${lpertl}/g" ${NAMEL001SURFEX} > $RUNDIR/EXSEG1.nam
+  sed -e "s/LPERTSURF=.F./LPERTSURF=${lpertl}/g" $RUNDIR/EXSEG2.nam > $RUNDIR/EXSEG1.nam
 fi
 
 ecflow_client --label=info "Run 001"

@@ -55,6 +55,9 @@ user=%USER%
 # report to ecflow
 ecflow_client --label=run "The date is now ${date} ${run}"
 
+# Environmental settings
+module load python3
+
 if [[ ${mem} == "00" ]]
 then
    leadtime=%LEADCTL%
@@ -193,7 +196,6 @@ do
     cp ${NAMELSELECT15} $RUNDIR/xxt$cact_step
 
   fi
-
  
   act_step_min=$act_step_min+$steps
 
@@ -216,14 +218,33 @@ then
       -e   "s/{nstrin}/$NSTRIN/"\
       -e   "s/{nstrout}/$NSTROUT/"\
       -e   "s/LSPSDT=.TRUE./LSPSDT=.FALSE./"\
+      -e   "s/LSPP=.TRUE./LSPP=.FALSE./"\
       -e   "s/{couplfreq}/${couplfr_s}/"\
       -e   "s/{inhydro}/${INHYDRO}/"\
-      -e   "s/NSEED_SDT=60/NSEED_SDT=${seedm}/"\
       -e   "s/NFRPOS=60,/NFRPOS=${steps},/"\
       -e   "s/ ! CNPPATH='.',/  CNPPATH='.',/"\
       -e   "s/{fcstrange}/${leadtime}/g" ${NAMEL001} > $RUNDIR/fort.4
 
+  ln -sf ${NAMEL001SURFEX} $RUNDIR/EXSEG2.nam
+
 else
+
+  # RP for SLHDEPSH
+  adate2=$(echo $date | cut -c5-8)
+  adate2=$(echo $adate2 | sed 's/^0*//') #remove leading zero if necessary
+  adate3=$adate2$run
+  mem2=$(echo $mem | sed 's/^0*//') #remove leading zero if necessary
+  (( adate4 = $adate3 * $mem2 ))
+  AT=$(python3 -c "import random; random.seed($adate4); zufall=random.sample(range(1,17),1); print(str(zufall[0]).zfill(2))")
+  (( AT2 = $AT * 0.006 ))
+  if [[ $AT2 -lt 0.01 ]]
+  then
+     AT2=0.01
+  elif [[ $AT2 -gt 0.09 ]]
+  then
+     AT2=0.09
+  fi
+  ecflow_client --label=info "SLHDEPSH=$AT2"
 
   sed -e   "s/{nproma}/$NPROMA/"\
       -e   "s/{experiment}/${EXP}/"\
@@ -236,18 +257,26 @@ else
       -e   "s/{nstrout}/$NSTROUT/"\
       -e   "s/{couplfreq}/${couplfr_s}/"\
       -e   "s/{inhydro}/${INHYDRO}/"\
+      -e   "s/LSPSDT=.TRUE./LSPSDT=.FALSE./"\
       -e   "s/NSEED_SDT=60/NSEED_SDT=${seedm}/"\
+      -e   "s/NENSFNB=0/NENSFNB=${seedm}/"\
       -e   "s/NFRPOS=60,/NFRPOS=${steps},/"\
+      -e   "s/RCRIAUTI=0.0002,/RCRIAUTI=7.53E-5,/"\
+      -e   "s/RT0CRIAUTI=-5.,/RT0CRIAUTI=-12.0,/"\
+      -e   "s/RCRIAUTC=0.001,/RCRIAUTC=6.3E-4,/"\
       -e   "s/ ! CNPPATH='.',/  CNPPATH='.',/"\
+      -e   "s/SLHDEPSH=0.08/SLHDEPSH=${AT2}/"\
       -e   "s/{fcstrange}/${leadtime}/g" ${NAMEL001} > $RUNDIR/fort.4
+
+  sed -e "s/XFRACZ0=10.,/XFRACZ0=5.,/g" ${NAMEL001SURFEX} > $RUNDIR/EXSEG2.nam
 
 fi  
 
 if [[ $mem == "00" || $pertsurf -eq 0 ]]
 then
-  ln -sf ${NAMEL001SURFEX} $RUNDIR/EXSEG1.nam
+  ln -sf $RUNDIR/EXSEG2.nam $RUNDIR/EXSEG1.nam
 else
-  sed -e "s/LPERTSURF=.F./LPERTSURF=${lpertl}/g" ${NAMEL001SURFEX} > $RUNDIR/EXSEG1.nam
+  sed -e "s/LPERTSURF=.F./LPERTSURF=${lpertl}/g" $RUNDIR/EXSEG2.nam > $RUNDIR/EXSEG1.nam
 fi
 
 ecflow_client --label=info "Run 001"

@@ -1,11 +1,11 @@
-#5.7.0
+#5.10.0
 suite claef
   edit ECF_MICRO '%'
   edit ECF_EXTN '.ecf'
   edit ECF_HOME '/home/zat/CLAEF/suite'
   edit ECF_INCLUDE '/home/zat/CLAEF/suite/include'
   edit ECF_TRIES '2'
-  edit STHOST 'ws2'
+  edit STHOST 'ws1'
   edit SCHOST 'hpc'
   edit USER 'zat'
   edit ACCOUNT 'atlaef'
@@ -54,7 +54,7 @@ suite claef
     endfamily
   endfamily
   family runs
-    repeat date DATUM 20230426 20251231 1
+    repeat date DATUM 20230920 20251231 1
     task dummy
       defstatus suspended
       edit NP '1'
@@ -253,7 +253,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim00'
             label run ""
@@ -283,7 +283,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_00/001:e
             edit MEMBER '00'
             edit NP '1'
@@ -297,7 +297,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_00/progrid:f
             edit MEMBER '00'
             edit NP '1'
@@ -310,7 +310,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_00/addgrib:g
             edit MEMBER '00'
             edit NP '1'
@@ -431,7 +431,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim01'
             label run ""
@@ -461,7 +461,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_01/001:e
             edit MEMBER '01'
             edit NP '1'
@@ -475,7 +475,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_01/progrid:f
             edit MEMBER '01'
             edit NP '1'
@@ -488,7 +488,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_01/addgrib:g
             edit MEMBER '01'
             edit NP '1'
@@ -609,7 +609,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim02'
             label run ""
@@ -639,7 +639,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_02/001:e
             edit MEMBER '02'
             edit NP '1'
@@ -653,7 +653,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_02/progrid:f
             edit MEMBER '02'
             edit NP '1'
@@ -666,7 +666,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_02/addgrib:g
             edit MEMBER '02'
             edit NP '1'
@@ -787,7 +787,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim03'
             label run ""
@@ -817,7 +817,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_03/001:e
             edit MEMBER '03'
             edit NP '1'
@@ -831,7 +831,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_03/progrid:f
             edit MEMBER '03'
             edit NP '1'
@@ -844,7 +844,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_03/addgrib:g
             edit MEMBER '03'
             edit NP '1'
@@ -965,7 +965,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim04'
             label run ""
@@ -995,7 +995,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_04/001:e
             edit MEMBER '04'
             edit NP '1'
@@ -1009,7 +1009,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_04/progrid:f
             edit MEMBER '04'
             edit NP '1'
@@ -1022,7 +1022,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_04/addgrib:g
             edit MEMBER '04'
             edit NP '1'
@@ -1143,7 +1143,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim05'
             label run ""
@@ -1173,7 +1173,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_05/001:e
             edit MEMBER '05'
             edit NP '1'
@@ -1187,7 +1187,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_05/progrid:f
             edit MEMBER '05'
             edit NP '1'
@@ -1200,7 +1200,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_05/addgrib:g
             edit MEMBER '05'
             edit NP '1'
@@ -1321,7 +1321,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim06'
             label run ""
@@ -1351,7 +1351,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_06/001:e
             edit MEMBER '06'
             edit NP '1'
@@ -1365,7 +1365,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_06/progrid:f
             edit MEMBER '06'
             edit NP '1'
@@ -1378,7 +1378,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_06/addgrib:g
             edit MEMBER '06'
             edit NP '1'
@@ -1499,7 +1499,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim07'
             label run ""
@@ -1529,7 +1529,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_07/001:e
             edit MEMBER '07'
             edit NP '1'
@@ -1543,7 +1543,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_07/progrid:f
             edit MEMBER '07'
             edit NP '1'
@@ -1556,7 +1556,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_07/addgrib:g
             edit MEMBER '07'
             edit NP '1'
@@ -1677,7 +1677,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim08'
             label run ""
@@ -1707,7 +1707,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_08/001:e
             edit MEMBER '08'
             edit NP '1'
@@ -1721,7 +1721,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_08/progrid:f
             edit MEMBER '08'
             edit NP '1'
@@ -1734,7 +1734,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_08/addgrib:g
             edit MEMBER '08'
             edit NP '1'
@@ -1855,7 +1855,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim09'
             label run ""
@@ -1885,7 +1885,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_09/001:e
             edit MEMBER '09'
             edit NP '1'
@@ -1899,7 +1899,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_09/progrid:f
             edit MEMBER '09'
             edit NP '1'
@@ -1912,7 +1912,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_09/addgrib:g
             edit MEMBER '09'
             edit NP '1'
@@ -2033,7 +2033,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim10'
             label run ""
@@ -2063,7 +2063,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_10/001:e
             edit MEMBER '10'
             edit NP '1'
@@ -2077,7 +2077,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_10/progrid:f
             edit MEMBER '10'
             edit NP '1'
@@ -2090,7 +2090,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_10/addgrib:g
             edit MEMBER '10'
             edit NP '1'
@@ -2211,7 +2211,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim11'
             label run ""
@@ -2241,7 +2241,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_11/001:e
             edit MEMBER '11'
             edit NP '1'
@@ -2255,7 +2255,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_11/progrid:f
             edit MEMBER '11'
             edit NP '1'
@@ -2268,7 +2268,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_11/addgrib:g
             edit MEMBER '11'
             edit NP '1'
@@ -2389,7 +2389,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim12'
             label run ""
@@ -2419,7 +2419,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_12/001:e
             edit MEMBER '12'
             edit NP '1'
@@ -2433,7 +2433,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_12/progrid:f
             edit MEMBER '12'
             edit NP '1'
@@ -2446,7 +2446,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_12/addgrib:g
             edit MEMBER '12'
             edit NP '1'
@@ -2567,7 +2567,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim13'
             label run ""
@@ -2597,7 +2597,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_13/001:e
             edit MEMBER '13'
             edit NP '1'
@@ -2611,7 +2611,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_13/progrid:f
             edit MEMBER '13'
             edit NP '1'
@@ -2624,7 +2624,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_13/addgrib:g
             edit MEMBER '13'
             edit NP '1'
@@ -2745,7 +2745,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim14'
             label run ""
@@ -2775,7 +2775,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_14/001:e
             edit MEMBER '14'
             edit NP '1'
@@ -2789,7 +2789,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_14/progrid:f
             edit MEMBER '14'
             edit NP '1'
@@ -2802,7 +2802,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_14/addgrib:g
             edit MEMBER '14'
             edit NP '1'
@@ -2923,7 +2923,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim15'
             label run ""
@@ -2953,7 +2953,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_15/001:e
             edit MEMBER '15'
             edit NP '1'
@@ -2967,7 +2967,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_15/progrid:f
             edit MEMBER '15'
             edit NP '1'
@@ -2980,7 +2980,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_15/addgrib:g
             edit MEMBER '15'
             edit NP '1'
@@ -3101,7 +3101,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim16'
             label run ""
@@ -3131,7 +3131,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_16/001:e
             edit MEMBER '16'
             edit NP '1'
@@ -3145,7 +3145,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_16/progrid:f
             edit MEMBER '16'
             edit NP '1'
@@ -3158,7 +3158,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_16/addgrib:g
             edit MEMBER '16'
             edit NP '1'
@@ -3381,7 +3381,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim00'
             label run ""
@@ -3411,7 +3411,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_00/001:e
             edit MEMBER '00'
             edit NP '1'
@@ -3425,7 +3425,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_00/progrid:f
             edit MEMBER '00'
             edit NP '1'
@@ -3438,7 +3438,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_00/addgrib:g
             edit MEMBER '00'
             edit NP '1'
@@ -3559,7 +3559,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim01'
             label run ""
@@ -3589,7 +3589,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_01/001:e
             edit MEMBER '01'
             edit NP '1'
@@ -3603,7 +3603,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_01/progrid:f
             edit MEMBER '01'
             edit NP '1'
@@ -3616,7 +3616,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_01/addgrib:g
             edit MEMBER '01'
             edit NP '1'
@@ -3737,7 +3737,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim02'
             label run ""
@@ -3767,7 +3767,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_02/001:e
             edit MEMBER '02'
             edit NP '1'
@@ -3781,7 +3781,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_02/progrid:f
             edit MEMBER '02'
             edit NP '1'
@@ -3794,7 +3794,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_02/addgrib:g
             edit MEMBER '02'
             edit NP '1'
@@ -3915,7 +3915,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim03'
             label run ""
@@ -3945,7 +3945,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_03/001:e
             edit MEMBER '03'
             edit NP '1'
@@ -3959,7 +3959,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_03/progrid:f
             edit MEMBER '03'
             edit NP '1'
@@ -3972,7 +3972,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_03/addgrib:g
             edit MEMBER '03'
             edit NP '1'
@@ -4093,7 +4093,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim04'
             label run ""
@@ -4123,7 +4123,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_04/001:e
             edit MEMBER '04'
             edit NP '1'
@@ -4137,7 +4137,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_04/progrid:f
             edit MEMBER '04'
             edit NP '1'
@@ -4150,7 +4150,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_04/addgrib:g
             edit MEMBER '04'
             edit NP '1'
@@ -4271,7 +4271,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim05'
             label run ""
@@ -4301,7 +4301,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_05/001:e
             edit MEMBER '05'
             edit NP '1'
@@ -4315,7 +4315,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_05/progrid:f
             edit MEMBER '05'
             edit NP '1'
@@ -4328,7 +4328,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_05/addgrib:g
             edit MEMBER '05'
             edit NP '1'
@@ -4449,7 +4449,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim06'
             label run ""
@@ -4479,7 +4479,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_06/001:e
             edit MEMBER '06'
             edit NP '1'
@@ -4493,7 +4493,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_06/progrid:f
             edit MEMBER '06'
             edit NP '1'
@@ -4506,7 +4506,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_06/addgrib:g
             edit MEMBER '06'
             edit NP '1'
@@ -4627,7 +4627,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim07'
             label run ""
@@ -4657,7 +4657,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_07/001:e
             edit MEMBER '07'
             edit NP '1'
@@ -4671,7 +4671,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_07/progrid:f
             edit MEMBER '07'
             edit NP '1'
@@ -4684,7 +4684,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_07/addgrib:g
             edit MEMBER '07'
             edit NP '1'
@@ -4805,7 +4805,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim08'
             label run ""
@@ -4835,7 +4835,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_08/001:e
             edit MEMBER '08'
             edit NP '1'
@@ -4849,7 +4849,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_08/progrid:f
             edit MEMBER '08'
             edit NP '1'
@@ -4862,7 +4862,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_08/addgrib:g
             edit MEMBER '08'
             edit NP '1'
@@ -4983,7 +4983,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim09'
             label run ""
@@ -5013,7 +5013,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_09/001:e
             edit MEMBER '09'
             edit NP '1'
@@ -5027,7 +5027,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_09/progrid:f
             edit MEMBER '09'
             edit NP '1'
@@ -5040,7 +5040,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_09/addgrib:g
             edit MEMBER '09'
             edit NP '1'
@@ -5161,7 +5161,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim10'
             label run ""
@@ -5191,7 +5191,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_10/001:e
             edit MEMBER '10'
             edit NP '1'
@@ -5205,7 +5205,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_10/progrid:f
             edit MEMBER '10'
             edit NP '1'
@@ -5218,7 +5218,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_10/addgrib:g
             edit MEMBER '10'
             edit NP '1'
@@ -5339,7 +5339,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim11'
             label run ""
@@ -5369,7 +5369,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_11/001:e
             edit MEMBER '11'
             edit NP '1'
@@ -5383,7 +5383,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_11/progrid:f
             edit MEMBER '11'
             edit NP '1'
@@ -5396,7 +5396,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_11/addgrib:g
             edit MEMBER '11'
             edit NP '1'
@@ -5517,7 +5517,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim12'
             label run ""
@@ -5547,7 +5547,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_12/001:e
             edit MEMBER '12'
             edit NP '1'
@@ -5561,7 +5561,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_12/progrid:f
             edit MEMBER '12'
             edit NP '1'
@@ -5574,7 +5574,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_12/addgrib:g
             edit MEMBER '12'
             edit NP '1'
@@ -5695,7 +5695,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim13'
             label run ""
@@ -5725,7 +5725,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_13/001:e
             edit MEMBER '13'
             edit NP '1'
@@ -5739,7 +5739,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_13/progrid:f
             edit MEMBER '13'
             edit NP '1'
@@ -5752,7 +5752,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_13/addgrib:g
             edit MEMBER '13'
             edit NP '1'
@@ -5873,7 +5873,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim14'
             label run ""
@@ -5903,7 +5903,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_14/001:e
             edit MEMBER '14'
             edit NP '1'
@@ -5917,7 +5917,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_14/progrid:f
             edit MEMBER '14'
             edit NP '1'
@@ -5930,7 +5930,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_14/addgrib:g
             edit MEMBER '14'
             edit NP '1'
@@ -6051,7 +6051,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim15'
             label run ""
@@ -6081,7 +6081,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_15/001:e
             edit MEMBER '15'
             edit NP '1'
@@ -6095,7 +6095,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_15/progrid:f
             edit MEMBER '15'
             edit NP '1'
@@ -6108,7 +6108,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_15/addgrib:g
             edit MEMBER '15'
             edit NP '1'
@@ -6229,7 +6229,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim16'
             label run ""
@@ -6259,7 +6259,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_16/001:e
             edit MEMBER '16'
             edit NP '1'
@@ -6273,7 +6273,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_16/progrid:f
             edit MEMBER '16'
             edit NP '1'
@@ -6286,7 +6286,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_16/addgrib:g
             edit MEMBER '16'
             edit NP '1'
@@ -6322,7 +6322,7 @@ suite claef
       edit LAUF '06'
       edit VORHI '6'
       edit LEAD '3'
-      edit LEADCTL '3'
+      edit LEADCTL '66'
       family dummy
         family ez_trigger
           task dummy1
@@ -6351,7 +6351,7 @@ suite claef
             edit NAME 'dummy2'
             label run ""
             label error ""
-            time 11:00
+            time 12:00
         endfamily
       endfamily
       task cleaning
@@ -6509,7 +6509,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim00'
             label run ""
@@ -6539,7 +6539,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_00/001:e
             edit MEMBER '00'
             edit NP '1'
@@ -6553,7 +6553,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_00/progrid:f
             edit MEMBER '00'
             edit NP '1'
@@ -6566,7 +6566,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_00/addgrib:g
             edit MEMBER '00'
             edit NP '1'
@@ -6687,7 +6687,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim01'
             label run ""
@@ -6717,7 +6717,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_01/001:e
             edit MEMBER '01'
             edit NP '1'
@@ -6731,7 +6731,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_01/progrid:f
             edit MEMBER '01'
             edit NP '1'
@@ -6744,7 +6744,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_01/addgrib:g
             edit MEMBER '01'
             edit NP '1'
@@ -6865,7 +6865,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim02'
             label run ""
@@ -6895,7 +6895,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_02/001:e
             edit MEMBER '02'
             edit NP '1'
@@ -6909,7 +6909,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_02/progrid:f
             edit MEMBER '02'
             edit NP '1'
@@ -6922,7 +6922,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_02/addgrib:g
             edit MEMBER '02'
             edit NP '1'
@@ -7043,7 +7043,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim03'
             label run ""
@@ -7073,7 +7073,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_03/001:e
             edit MEMBER '03'
             edit NP '1'
@@ -7087,7 +7087,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_03/progrid:f
             edit MEMBER '03'
             edit NP '1'
@@ -7100,7 +7100,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_03/addgrib:g
             edit MEMBER '03'
             edit NP '1'
@@ -7221,7 +7221,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim04'
             label run ""
@@ -7251,7 +7251,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_04/001:e
             edit MEMBER '04'
             edit NP '1'
@@ -7265,7 +7265,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_04/progrid:f
             edit MEMBER '04'
             edit NP '1'
@@ -7278,7 +7278,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_04/addgrib:g
             edit MEMBER '04'
             edit NP '1'
@@ -7399,7 +7399,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim05'
             label run ""
@@ -7429,7 +7429,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_05/001:e
             edit MEMBER '05'
             edit NP '1'
@@ -7443,7 +7443,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_05/progrid:f
             edit MEMBER '05'
             edit NP '1'
@@ -7456,7 +7456,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_05/addgrib:g
             edit MEMBER '05'
             edit NP '1'
@@ -7577,7 +7577,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim06'
             label run ""
@@ -7607,7 +7607,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_06/001:e
             edit MEMBER '06'
             edit NP '1'
@@ -7621,7 +7621,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_06/progrid:f
             edit MEMBER '06'
             edit NP '1'
@@ -7634,7 +7634,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_06/addgrib:g
             edit MEMBER '06'
             edit NP '1'
@@ -7755,7 +7755,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim07'
             label run ""
@@ -7785,7 +7785,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_07/001:e
             edit MEMBER '07'
             edit NP '1'
@@ -7799,7 +7799,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_07/progrid:f
             edit MEMBER '07'
             edit NP '1'
@@ -7812,7 +7812,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_07/addgrib:g
             edit MEMBER '07'
             edit NP '1'
@@ -7933,7 +7933,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim08'
             label run ""
@@ -7963,7 +7963,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_08/001:e
             edit MEMBER '08'
             edit NP '1'
@@ -7977,7 +7977,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_08/progrid:f
             edit MEMBER '08'
             edit NP '1'
@@ -7990,7 +7990,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_08/addgrib:g
             edit MEMBER '08'
             edit NP '1'
@@ -8111,7 +8111,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim09'
             label run ""
@@ -8141,7 +8141,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_09/001:e
             edit MEMBER '09'
             edit NP '1'
@@ -8155,7 +8155,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_09/progrid:f
             edit MEMBER '09'
             edit NP '1'
@@ -8168,7 +8168,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_09/addgrib:g
             edit MEMBER '09'
             edit NP '1'
@@ -8289,7 +8289,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim10'
             label run ""
@@ -8319,7 +8319,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_10/001:e
             edit MEMBER '10'
             edit NP '1'
@@ -8333,7 +8333,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_10/progrid:f
             edit MEMBER '10'
             edit NP '1'
@@ -8346,7 +8346,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_10/addgrib:g
             edit MEMBER '10'
             edit NP '1'
@@ -8467,7 +8467,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim11'
             label run ""
@@ -8497,7 +8497,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_11/001:e
             edit MEMBER '11'
             edit NP '1'
@@ -8511,7 +8511,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_11/progrid:f
             edit MEMBER '11'
             edit NP '1'
@@ -8524,7 +8524,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_11/addgrib:g
             edit MEMBER '11'
             edit NP '1'
@@ -8645,7 +8645,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim12'
             label run ""
@@ -8675,7 +8675,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_12/001:e
             edit MEMBER '12'
             edit NP '1'
@@ -8689,7 +8689,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_12/progrid:f
             edit MEMBER '12'
             edit NP '1'
@@ -8702,7 +8702,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_12/addgrib:g
             edit MEMBER '12'
             edit NP '1'
@@ -8823,7 +8823,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim13'
             label run ""
@@ -8853,7 +8853,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_13/001:e
             edit MEMBER '13'
             edit NP '1'
@@ -8867,7 +8867,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_13/progrid:f
             edit MEMBER '13'
             edit NP '1'
@@ -8880,7 +8880,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_13/addgrib:g
             edit MEMBER '13'
             edit NP '1'
@@ -9001,7 +9001,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim14'
             label run ""
@@ -9031,7 +9031,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_14/001:e
             edit MEMBER '14'
             edit NP '1'
@@ -9045,7 +9045,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_14/progrid:f
             edit MEMBER '14'
             edit NP '1'
@@ -9058,7 +9058,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_14/addgrib:g
             edit MEMBER '14'
             edit NP '1'
@@ -9179,7 +9179,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim15'
             label run ""
@@ -9209,7 +9209,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_15/001:e
             edit MEMBER '15'
             edit NP '1'
@@ -9223,7 +9223,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_15/progrid:f
             edit MEMBER '15'
             edit NP '1'
@@ -9236,7 +9236,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_15/addgrib:g
             edit MEMBER '15'
             edit NP '1'
@@ -9357,7 +9357,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim16'
             label run ""
@@ -9387,7 +9387,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_16/001:e
             edit MEMBER '16'
             edit NP '1'
@@ -9401,7 +9401,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_16/progrid:f
             edit MEMBER '16'
             edit NP '1'
@@ -9414,7 +9414,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_16/addgrib:g
             edit MEMBER '16'
             edit NP '1'
@@ -9637,7 +9637,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim00'
             label run ""
@@ -9667,7 +9667,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_00/001:e
             edit MEMBER '00'
             edit NP '1'
@@ -9681,7 +9681,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_00/progrid:f
             edit MEMBER '00'
             edit NP '1'
@@ -9694,7 +9694,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_00/addgrib:g
             edit MEMBER '00'
             edit NP '1'
@@ -9815,7 +9815,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim01'
             label run ""
@@ -9845,7 +9845,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_01/001:e
             edit MEMBER '01'
             edit NP '1'
@@ -9859,7 +9859,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_01/progrid:f
             edit MEMBER '01'
             edit NP '1'
@@ -9872,7 +9872,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_01/addgrib:g
             edit MEMBER '01'
             edit NP '1'
@@ -9993,7 +9993,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim02'
             label run ""
@@ -10023,7 +10023,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_02/001:e
             edit MEMBER '02'
             edit NP '1'
@@ -10037,7 +10037,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_02/progrid:f
             edit MEMBER '02'
             edit NP '1'
@@ -10050,7 +10050,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_02/addgrib:g
             edit MEMBER '02'
             edit NP '1'
@@ -10171,7 +10171,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim03'
             label run ""
@@ -10201,7 +10201,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_03/001:e
             edit MEMBER '03'
             edit NP '1'
@@ -10215,7 +10215,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_03/progrid:f
             edit MEMBER '03'
             edit NP '1'
@@ -10228,7 +10228,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_03/addgrib:g
             edit MEMBER '03'
             edit NP '1'
@@ -10349,7 +10349,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim04'
             label run ""
@@ -10379,7 +10379,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_04/001:e
             edit MEMBER '04'
             edit NP '1'
@@ -10393,7 +10393,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_04/progrid:f
             edit MEMBER '04'
             edit NP '1'
@@ -10406,7 +10406,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_04/addgrib:g
             edit MEMBER '04'
             edit NP '1'
@@ -10527,7 +10527,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim05'
             label run ""
@@ -10557,7 +10557,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_05/001:e
             edit MEMBER '05'
             edit NP '1'
@@ -10571,7 +10571,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_05/progrid:f
             edit MEMBER '05'
             edit NP '1'
@@ -10584,7 +10584,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_05/addgrib:g
             edit MEMBER '05'
             edit NP '1'
@@ -10705,7 +10705,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim06'
             label run ""
@@ -10735,7 +10735,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_06/001:e
             edit MEMBER '06'
             edit NP '1'
@@ -10749,7 +10749,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_06/progrid:f
             edit MEMBER '06'
             edit NP '1'
@@ -10762,7 +10762,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_06/addgrib:g
             edit MEMBER '06'
             edit NP '1'
@@ -10883,7 +10883,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim07'
             label run ""
@@ -10913,7 +10913,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_07/001:e
             edit MEMBER '07'
             edit NP '1'
@@ -10927,7 +10927,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_07/progrid:f
             edit MEMBER '07'
             edit NP '1'
@@ -10940,7 +10940,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_07/addgrib:g
             edit MEMBER '07'
             edit NP '1'
@@ -11061,7 +11061,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim08'
             label run ""
@@ -11091,7 +11091,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_08/001:e
             edit MEMBER '08'
             edit NP '1'
@@ -11105,7 +11105,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_08/progrid:f
             edit MEMBER '08'
             edit NP '1'
@@ -11118,7 +11118,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_08/addgrib:g
             edit MEMBER '08'
             edit NP '1'
@@ -11239,7 +11239,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim09'
             label run ""
@@ -11269,7 +11269,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_09/001:e
             edit MEMBER '09'
             edit NP '1'
@@ -11283,7 +11283,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_09/progrid:f
             edit MEMBER '09'
             edit NP '1'
@@ -11296,7 +11296,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_09/addgrib:g
             edit MEMBER '09'
             edit NP '1'
@@ -11417,7 +11417,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim10'
             label run ""
@@ -11447,7 +11447,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_10/001:e
             edit MEMBER '10'
             edit NP '1'
@@ -11461,7 +11461,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_10/progrid:f
             edit MEMBER '10'
             edit NP '1'
@@ -11474,7 +11474,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_10/addgrib:g
             edit MEMBER '10'
             edit NP '1'
@@ -11595,7 +11595,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim11'
             label run ""
@@ -11625,7 +11625,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_11/001:e
             edit MEMBER '11'
             edit NP '1'
@@ -11639,7 +11639,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_11/progrid:f
             edit MEMBER '11'
             edit NP '1'
@@ -11652,7 +11652,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_11/addgrib:g
             edit MEMBER '11'
             edit NP '1'
@@ -11773,7 +11773,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim12'
             label run ""
@@ -11803,7 +11803,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_12/001:e
             edit MEMBER '12'
             edit NP '1'
@@ -11817,7 +11817,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_12/progrid:f
             edit MEMBER '12'
             edit NP '1'
@@ -11830,7 +11830,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_12/addgrib:g
             edit MEMBER '12'
             edit NP '1'
@@ -11951,7 +11951,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim13'
             label run ""
@@ -11981,7 +11981,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_13/001:e
             edit MEMBER '13'
             edit NP '1'
@@ -11995,7 +11995,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_13/progrid:f
             edit MEMBER '13'
             edit NP '1'
@@ -12008,7 +12008,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_13/addgrib:g
             edit MEMBER '13'
             edit NP '1'
@@ -12129,7 +12129,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim14'
             label run ""
@@ -12159,7 +12159,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_14/001:e
             edit MEMBER '14'
             edit NP '1'
@@ -12173,7 +12173,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_14/progrid:f
             edit MEMBER '14'
             edit NP '1'
@@ -12186,7 +12186,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_14/addgrib:g
             edit MEMBER '14'
             edit NP '1'
@@ -12307,7 +12307,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim15'
             label run ""
@@ -12337,7 +12337,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_15/001:e
             edit MEMBER '15'
             edit NP '1'
@@ -12351,7 +12351,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_15/progrid:f
             edit MEMBER '15'
             edit NP '1'
@@ -12364,7 +12364,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_15/addgrib:g
             edit MEMBER '15'
             edit NP '1'
@@ -12485,7 +12485,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim16'
             label run ""
@@ -12515,7 +12515,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_16/001:e
             edit MEMBER '16'
             edit NP '1'
@@ -12529,7 +12529,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_16/progrid:f
             edit MEMBER '16'
             edit NP '1'
@@ -12542,7 +12542,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_16/addgrib:g
             edit MEMBER '16'
             edit NP '1'
@@ -12578,7 +12578,7 @@ suite claef
       edit LAUF '12'
       edit VORHI '6'
       edit LEAD '60'
-      edit LEADCTL '84'
+      edit LEADCTL '66'
       family dummy
         family ez_trigger
           task dummy1
@@ -12765,7 +12765,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim00'
             label run ""
@@ -12795,7 +12795,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_00/001:e
             edit MEMBER '00'
             edit NP '1'
@@ -12809,7 +12809,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_00/progrid:f
             edit MEMBER '00'
             edit NP '1'
@@ -12822,7 +12822,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_00/addgrib:g
             edit MEMBER '00'
             edit NP '1'
@@ -12943,7 +12943,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim01'
             label run ""
@@ -12973,7 +12973,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_01/001:e
             edit MEMBER '01'
             edit NP '1'
@@ -12987,7 +12987,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_01/progrid:f
             edit MEMBER '01'
             edit NP '1'
@@ -13000,7 +13000,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_01/addgrib:g
             edit MEMBER '01'
             edit NP '1'
@@ -13121,7 +13121,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim02'
             label run ""
@@ -13151,7 +13151,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_02/001:e
             edit MEMBER '02'
             edit NP '1'
@@ -13165,7 +13165,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_02/progrid:f
             edit MEMBER '02'
             edit NP '1'
@@ -13178,7 +13178,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_02/addgrib:g
             edit MEMBER '02'
             edit NP '1'
@@ -13299,7 +13299,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim03'
             label run ""
@@ -13329,7 +13329,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_03/001:e
             edit MEMBER '03'
             edit NP '1'
@@ -13343,7 +13343,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_03/progrid:f
             edit MEMBER '03'
             edit NP '1'
@@ -13356,7 +13356,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_03/addgrib:g
             edit MEMBER '03'
             edit NP '1'
@@ -13477,7 +13477,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim04'
             label run ""
@@ -13507,7 +13507,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_04/001:e
             edit MEMBER '04'
             edit NP '1'
@@ -13521,7 +13521,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_04/progrid:f
             edit MEMBER '04'
             edit NP '1'
@@ -13534,7 +13534,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_04/addgrib:g
             edit MEMBER '04'
             edit NP '1'
@@ -13655,7 +13655,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim05'
             label run ""
@@ -13685,7 +13685,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_05/001:e
             edit MEMBER '05'
             edit NP '1'
@@ -13699,7 +13699,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_05/progrid:f
             edit MEMBER '05'
             edit NP '1'
@@ -13712,7 +13712,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_05/addgrib:g
             edit MEMBER '05'
             edit NP '1'
@@ -13833,7 +13833,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim06'
             label run ""
@@ -13863,7 +13863,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_06/001:e
             edit MEMBER '06'
             edit NP '1'
@@ -13877,7 +13877,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_06/progrid:f
             edit MEMBER '06'
             edit NP '1'
@@ -13890,7 +13890,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_06/addgrib:g
             edit MEMBER '06'
             edit NP '1'
@@ -14011,7 +14011,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim07'
             label run ""
@@ -14041,7 +14041,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_07/001:e
             edit MEMBER '07'
             edit NP '1'
@@ -14055,7 +14055,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_07/progrid:f
             edit MEMBER '07'
             edit NP '1'
@@ -14068,7 +14068,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_07/addgrib:g
             edit MEMBER '07'
             edit NP '1'
@@ -14189,7 +14189,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim08'
             label run ""
@@ -14219,7 +14219,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_08/001:e
             edit MEMBER '08'
             edit NP '1'
@@ -14233,7 +14233,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_08/progrid:f
             edit MEMBER '08'
             edit NP '1'
@@ -14246,7 +14246,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_08/addgrib:g
             edit MEMBER '08'
             edit NP '1'
@@ -14367,7 +14367,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim09'
             label run ""
@@ -14397,7 +14397,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_09/001:e
             edit MEMBER '09'
             edit NP '1'
@@ -14411,7 +14411,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_09/progrid:f
             edit MEMBER '09'
             edit NP '1'
@@ -14424,7 +14424,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_09/addgrib:g
             edit MEMBER '09'
             edit NP '1'
@@ -14545,7 +14545,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim10'
             label run ""
@@ -14575,7 +14575,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_10/001:e
             edit MEMBER '10'
             edit NP '1'
@@ -14589,7 +14589,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_10/progrid:f
             edit MEMBER '10'
             edit NP '1'
@@ -14602,7 +14602,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_10/addgrib:g
             edit MEMBER '10'
             edit NP '1'
@@ -14723,7 +14723,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim11'
             label run ""
@@ -14753,7 +14753,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_11/001:e
             edit MEMBER '11'
             edit NP '1'
@@ -14767,7 +14767,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_11/progrid:f
             edit MEMBER '11'
             edit NP '1'
@@ -14780,7 +14780,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_11/addgrib:g
             edit MEMBER '11'
             edit NP '1'
@@ -14901,7 +14901,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim12'
             label run ""
@@ -14931,7 +14931,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_12/001:e
             edit MEMBER '12'
             edit NP '1'
@@ -14945,7 +14945,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_12/progrid:f
             edit MEMBER '12'
             edit NP '1'
@@ -14958,7 +14958,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_12/addgrib:g
             edit MEMBER '12'
             edit NP '1'
@@ -15079,7 +15079,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim13'
             label run ""
@@ -15109,7 +15109,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_13/001:e
             edit MEMBER '13'
             edit NP '1'
@@ -15123,7 +15123,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_13/progrid:f
             edit MEMBER '13'
             edit NP '1'
@@ -15136,7 +15136,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_13/addgrib:g
             edit MEMBER '13'
             edit NP '1'
@@ -15257,7 +15257,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim14'
             label run ""
@@ -15287,7 +15287,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_14/001:e
             edit MEMBER '14'
             edit NP '1'
@@ -15301,7 +15301,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_14/progrid:f
             edit MEMBER '14'
             edit NP '1'
@@ -15314,7 +15314,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_14/addgrib:g
             edit MEMBER '14'
             edit NP '1'
@@ -15435,7 +15435,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim15'
             label run ""
@@ -15465,7 +15465,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_15/001:e
             edit MEMBER '15'
             edit NP '1'
@@ -15479,7 +15479,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_15/progrid:f
             edit MEMBER '15'
             edit NP '1'
@@ -15492,7 +15492,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_15/addgrib:g
             edit MEMBER '15'
             edit NP '1'
@@ -15613,7 +15613,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim16'
             label run ""
@@ -15643,7 +15643,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_16/001:e
             edit MEMBER '16'
             edit NP '1'
@@ -15657,7 +15657,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_16/progrid:f
             edit MEMBER '16'
             edit NP '1'
@@ -15670,7 +15670,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_16/addgrib:g
             edit MEMBER '16'
             edit NP '1'
@@ -15893,7 +15893,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim00'
             label run ""
@@ -15923,7 +15923,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_00/001:e
             edit MEMBER '00'
             edit NP '1'
@@ -15937,7 +15937,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_00/progrid:f
             edit MEMBER '00'
             edit NP '1'
@@ -15950,7 +15950,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_00/addgrib:g
             edit MEMBER '00'
             edit NP '1'
@@ -16071,7 +16071,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim01'
             label run ""
@@ -16101,7 +16101,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_01/001:e
             edit MEMBER '01'
             edit NP '1'
@@ -16115,7 +16115,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_01/progrid:f
             edit MEMBER '01'
             edit NP '1'
@@ -16128,7 +16128,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_01/addgrib:g
             edit MEMBER '01'
             edit NP '1'
@@ -16249,7 +16249,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim02'
             label run ""
@@ -16279,7 +16279,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_02/001:e
             edit MEMBER '02'
             edit NP '1'
@@ -16293,7 +16293,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_02/progrid:f
             edit MEMBER '02'
             edit NP '1'
@@ -16306,7 +16306,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_02/addgrib:g
             edit MEMBER '02'
             edit NP '1'
@@ -16427,7 +16427,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim03'
             label run ""
@@ -16457,7 +16457,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_03/001:e
             edit MEMBER '03'
             edit NP '1'
@@ -16471,7 +16471,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_03/progrid:f
             edit MEMBER '03'
             edit NP '1'
@@ -16484,7 +16484,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_03/addgrib:g
             edit MEMBER '03'
             edit NP '1'
@@ -16605,7 +16605,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim04'
             label run ""
@@ -16635,7 +16635,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_04/001:e
             edit MEMBER '04'
             edit NP '1'
@@ -16649,7 +16649,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_04/progrid:f
             edit MEMBER '04'
             edit NP '1'
@@ -16662,7 +16662,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_04/addgrib:g
             edit MEMBER '04'
             edit NP '1'
@@ -16783,7 +16783,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim05'
             label run ""
@@ -16813,7 +16813,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_05/001:e
             edit MEMBER '05'
             edit NP '1'
@@ -16827,7 +16827,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_05/progrid:f
             edit MEMBER '05'
             edit NP '1'
@@ -16840,7 +16840,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_05/addgrib:g
             edit MEMBER '05'
             edit NP '1'
@@ -16961,7 +16961,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim06'
             label run ""
@@ -16991,7 +16991,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_06/001:e
             edit MEMBER '06'
             edit NP '1'
@@ -17005,7 +17005,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_06/progrid:f
             edit MEMBER '06'
             edit NP '1'
@@ -17018,7 +17018,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_06/addgrib:g
             edit MEMBER '06'
             edit NP '1'
@@ -17139,7 +17139,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim07'
             label run ""
@@ -17169,7 +17169,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_07/001:e
             edit MEMBER '07'
             edit NP '1'
@@ -17183,7 +17183,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_07/progrid:f
             edit MEMBER '07'
             edit NP '1'
@@ -17196,7 +17196,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_07/addgrib:g
             edit MEMBER '07'
             edit NP '1'
@@ -17317,7 +17317,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim08'
             label run ""
@@ -17347,7 +17347,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_08/001:e
             edit MEMBER '08'
             edit NP '1'
@@ -17361,7 +17361,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_08/progrid:f
             edit MEMBER '08'
             edit NP '1'
@@ -17374,7 +17374,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_08/addgrib:g
             edit MEMBER '08'
             edit NP '1'
@@ -17495,7 +17495,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim09'
             label run ""
@@ -17525,7 +17525,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_09/001:e
             edit MEMBER '09'
             edit NP '1'
@@ -17539,7 +17539,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_09/progrid:f
             edit MEMBER '09'
             edit NP '1'
@@ -17552,7 +17552,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_09/addgrib:g
             edit MEMBER '09'
             edit NP '1'
@@ -17673,7 +17673,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim10'
             label run ""
@@ -17703,7 +17703,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_10/001:e
             edit MEMBER '10'
             edit NP '1'
@@ -17717,7 +17717,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_10/progrid:f
             edit MEMBER '10'
             edit NP '1'
@@ -17730,7 +17730,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_10/addgrib:g
             edit MEMBER '10'
             edit NP '1'
@@ -17851,7 +17851,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim11'
             label run ""
@@ -17881,7 +17881,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_11/001:e
             edit MEMBER '11'
             edit NP '1'
@@ -17895,7 +17895,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_11/progrid:f
             edit MEMBER '11'
             edit NP '1'
@@ -17908,7 +17908,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_11/addgrib:g
             edit MEMBER '11'
             edit NP '1'
@@ -18029,7 +18029,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim12'
             label run ""
@@ -18059,7 +18059,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_12/001:e
             edit MEMBER '12'
             edit NP '1'
@@ -18073,7 +18073,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_12/progrid:f
             edit MEMBER '12'
             edit NP '1'
@@ -18086,7 +18086,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_12/addgrib:g
             edit MEMBER '12'
             edit NP '1'
@@ -18207,7 +18207,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim13'
             label run ""
@@ -18237,7 +18237,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_13/001:e
             edit MEMBER '13'
             edit NP '1'
@@ -18251,7 +18251,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_13/progrid:f
             edit MEMBER '13'
             edit NP '1'
@@ -18264,7 +18264,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_13/addgrib:g
             edit MEMBER '13'
             edit NP '1'
@@ -18385,7 +18385,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim14'
             label run ""
@@ -18415,7 +18415,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_14/001:e
             edit MEMBER '14'
             edit NP '1'
@@ -18429,7 +18429,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_14/progrid:f
             edit MEMBER '14'
             edit NP '1'
@@ -18442,7 +18442,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_14/addgrib:g
             edit MEMBER '14'
             edit NP '1'
@@ -18563,7 +18563,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim15'
             label run ""
@@ -18593,7 +18593,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_15/001:e
             edit MEMBER '15'
             edit NP '1'
@@ -18607,7 +18607,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_15/progrid:f
             edit MEMBER '15'
             edit NP '1'
@@ -18620,7 +18620,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_15/addgrib:g
             edit MEMBER '15'
             edit NP '1'
@@ -18741,7 +18741,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim16'
             label run ""
@@ -18771,7 +18771,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_16/001:e
             edit MEMBER '16'
             edit NP '1'
@@ -18785,7 +18785,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_16/progrid:f
             edit MEMBER '16'
             edit NP '1'
@@ -18798,7 +18798,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_16/addgrib:g
             edit MEMBER '16'
             edit NP '1'
@@ -18834,7 +18834,7 @@ suite claef
       edit LAUF '18'
       edit VORHI '6'
       edit LEAD '3'
-      edit LEADCTL '3'
+      edit LEADCTL '66'
       family dummy
         family ez_trigger
           task dummy1
@@ -18863,7 +18863,7 @@ suite claef
             edit NAME 'dummy2'
             label run ""
             label error ""
-            time 23:00
+            time 23:58
         endfamily
       endfamily
       task cleaning
@@ -19021,7 +19021,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim00'
             label run ""
@@ -19051,7 +19051,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_00/001:e
             edit MEMBER '00'
             edit NP '1'
@@ -19065,7 +19065,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_00/progrid:f
             edit MEMBER '00'
             edit NP '1'
@@ -19078,7 +19078,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_00/addgrib:g
             edit MEMBER '00'
             edit NP '1'
@@ -19199,7 +19199,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim01'
             label run ""
@@ -19229,7 +19229,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_01/001:e
             edit MEMBER '01'
             edit NP '1'
@@ -19243,7 +19243,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_01/progrid:f
             edit MEMBER '01'
             edit NP '1'
@@ -19256,7 +19256,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_01/addgrib:g
             edit MEMBER '01'
             edit NP '1'
@@ -19377,7 +19377,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim02'
             label run ""
@@ -19407,7 +19407,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_02/001:e
             edit MEMBER '02'
             edit NP '1'
@@ -19421,7 +19421,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_02/progrid:f
             edit MEMBER '02'
             edit NP '1'
@@ -19434,7 +19434,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_02/addgrib:g
             edit MEMBER '02'
             edit NP '1'
@@ -19555,7 +19555,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim03'
             label run ""
@@ -19585,7 +19585,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_03/001:e
             edit MEMBER '03'
             edit NP '1'
@@ -19599,7 +19599,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_03/progrid:f
             edit MEMBER '03'
             edit NP '1'
@@ -19612,7 +19612,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_03/addgrib:g
             edit MEMBER '03'
             edit NP '1'
@@ -19733,7 +19733,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim04'
             label run ""
@@ -19763,7 +19763,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_04/001:e
             edit MEMBER '04'
             edit NP '1'
@@ -19777,7 +19777,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_04/progrid:f
             edit MEMBER '04'
             edit NP '1'
@@ -19790,7 +19790,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_04/addgrib:g
             edit MEMBER '04'
             edit NP '1'
@@ -19911,7 +19911,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim05'
             label run ""
@@ -19941,7 +19941,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_05/001:e
             edit MEMBER '05'
             edit NP '1'
@@ -19955,7 +19955,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_05/progrid:f
             edit MEMBER '05'
             edit NP '1'
@@ -19968,7 +19968,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_05/addgrib:g
             edit MEMBER '05'
             edit NP '1'
@@ -20089,7 +20089,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim06'
             label run ""
@@ -20119,7 +20119,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_06/001:e
             edit MEMBER '06'
             edit NP '1'
@@ -20133,7 +20133,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_06/progrid:f
             edit MEMBER '06'
             edit NP '1'
@@ -20146,7 +20146,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_06/addgrib:g
             edit MEMBER '06'
             edit NP '1'
@@ -20267,7 +20267,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim07'
             label run ""
@@ -20297,7 +20297,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_07/001:e
             edit MEMBER '07'
             edit NP '1'
@@ -20311,7 +20311,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_07/progrid:f
             edit MEMBER '07'
             edit NP '1'
@@ -20324,7 +20324,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_07/addgrib:g
             edit MEMBER '07'
             edit NP '1'
@@ -20445,7 +20445,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim08'
             label run ""
@@ -20475,7 +20475,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_08/001:e
             edit MEMBER '08'
             edit NP '1'
@@ -20489,7 +20489,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_08/progrid:f
             edit MEMBER '08'
             edit NP '1'
@@ -20502,7 +20502,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_08/addgrib:g
             edit MEMBER '08'
             edit NP '1'
@@ -20623,7 +20623,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim09'
             label run ""
@@ -20653,7 +20653,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_09/001:e
             edit MEMBER '09'
             edit NP '1'
@@ -20667,7 +20667,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_09/progrid:f
             edit MEMBER '09'
             edit NP '1'
@@ -20680,7 +20680,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_09/addgrib:g
             edit MEMBER '09'
             edit NP '1'
@@ -20801,7 +20801,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim10'
             label run ""
@@ -20831,7 +20831,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_10/001:e
             edit MEMBER '10'
             edit NP '1'
@@ -20845,7 +20845,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_10/progrid:f
             edit MEMBER '10'
             edit NP '1'
@@ -20858,7 +20858,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_10/addgrib:g
             edit MEMBER '10'
             edit NP '1'
@@ -20979,7 +20979,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim11'
             label run ""
@@ -21009,7 +21009,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_11/001:e
             edit MEMBER '11'
             edit NP '1'
@@ -21023,7 +21023,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_11/progrid:f
             edit MEMBER '11'
             edit NP '1'
@@ -21036,7 +21036,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_11/addgrib:g
             edit MEMBER '11'
             edit NP '1'
@@ -21157,7 +21157,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim12'
             label run ""
@@ -21187,7 +21187,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_12/001:e
             edit MEMBER '12'
             edit NP '1'
@@ -21201,7 +21201,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_12/progrid:f
             edit MEMBER '12'
             edit NP '1'
@@ -21214,7 +21214,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_12/addgrib:g
             edit MEMBER '12'
             edit NP '1'
@@ -21335,7 +21335,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim13'
             label run ""
@@ -21365,7 +21365,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_13/001:e
             edit MEMBER '13'
             edit NP '1'
@@ -21379,7 +21379,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_13/progrid:f
             edit MEMBER '13'
             edit NP '1'
@@ -21392,7 +21392,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_13/addgrib:g
             edit MEMBER '13'
             edit NP '1'
@@ -21513,7 +21513,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim14'
             label run ""
@@ -21543,7 +21543,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_14/001:e
             edit MEMBER '14'
             edit NP '1'
@@ -21557,7 +21557,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_14/progrid:f
             edit MEMBER '14'
             edit NP '1'
@@ -21570,7 +21570,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_14/addgrib:g
             edit MEMBER '14'
             edit NP '1'
@@ -21691,7 +21691,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim15'
             label run ""
@@ -21721,7 +21721,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_15/001:e
             edit MEMBER '15'
             edit NP '1'
@@ -21735,7 +21735,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_15/progrid:f
             edit MEMBER '15'
             edit NP '1'
@@ -21748,7 +21748,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_15/addgrib:g
             edit MEMBER '15'
             edit NP '1'
@@ -21869,7 +21869,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim16'
             label run ""
@@ -21899,7 +21899,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_16/001:e
             edit MEMBER '16'
             edit NP '1'
@@ -21913,7 +21913,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_16/progrid:f
             edit MEMBER '16'
             edit NP '1'
@@ -21926,7 +21926,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_16/addgrib:g
             edit MEMBER '16'
             edit NP '1'
@@ -22149,7 +22149,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim00'
             label run ""
@@ -22179,7 +22179,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_00/001:e
             edit MEMBER '00'
             edit NP '1'
@@ -22193,7 +22193,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_00/progrid:f
             edit MEMBER '00'
             edit NP '1'
@@ -22206,7 +22206,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_00/addgrib:g
             edit MEMBER '00'
             edit NP '1'
@@ -22327,7 +22327,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim01'
             label run ""
@@ -22357,7 +22357,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_01/001:e
             edit MEMBER '01'
             edit NP '1'
@@ -22371,7 +22371,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_01/progrid:f
             edit MEMBER '01'
             edit NP '1'
@@ -22384,7 +22384,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_01/addgrib:g
             edit MEMBER '01'
             edit NP '1'
@@ -22505,7 +22505,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim02'
             label run ""
@@ -22535,7 +22535,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_02/001:e
             edit MEMBER '02'
             edit NP '1'
@@ -22549,7 +22549,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_02/progrid:f
             edit MEMBER '02'
             edit NP '1'
@@ -22562,7 +22562,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_02/addgrib:g
             edit MEMBER '02'
             edit NP '1'
@@ -22683,7 +22683,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim03'
             label run ""
@@ -22713,7 +22713,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_03/001:e
             edit MEMBER '03'
             edit NP '1'
@@ -22727,7 +22727,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_03/progrid:f
             edit MEMBER '03'
             edit NP '1'
@@ -22740,7 +22740,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_03/addgrib:g
             edit MEMBER '03'
             edit NP '1'
@@ -22861,7 +22861,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim04'
             label run ""
@@ -22891,7 +22891,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_04/001:e
             edit MEMBER '04'
             edit NP '1'
@@ -22905,7 +22905,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_04/progrid:f
             edit MEMBER '04'
             edit NP '1'
@@ -22918,7 +22918,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_04/addgrib:g
             edit MEMBER '04'
             edit NP '1'
@@ -23039,7 +23039,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim05'
             label run ""
@@ -23069,7 +23069,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_05/001:e
             edit MEMBER '05'
             edit NP '1'
@@ -23083,7 +23083,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_05/progrid:f
             edit MEMBER '05'
             edit NP '1'
@@ -23096,7 +23096,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_05/addgrib:g
             edit MEMBER '05'
             edit NP '1'
@@ -23217,7 +23217,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim06'
             label run ""
@@ -23247,7 +23247,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_06/001:e
             edit MEMBER '06'
             edit NP '1'
@@ -23261,7 +23261,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_06/progrid:f
             edit MEMBER '06'
             edit NP '1'
@@ -23274,7 +23274,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_06/addgrib:g
             edit MEMBER '06'
             edit NP '1'
@@ -23395,7 +23395,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim07'
             label run ""
@@ -23425,7 +23425,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_07/001:e
             edit MEMBER '07'
             edit NP '1'
@@ -23439,7 +23439,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_07/progrid:f
             edit MEMBER '07'
             edit NP '1'
@@ -23452,7 +23452,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_07/addgrib:g
             edit MEMBER '07'
             edit NP '1'
@@ -23573,7 +23573,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim08'
             label run ""
@@ -23603,7 +23603,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_08/001:e
             edit MEMBER '08'
             edit NP '1'
@@ -23617,7 +23617,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_08/progrid:f
             edit MEMBER '08'
             edit NP '1'
@@ -23630,7 +23630,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_08/addgrib:g
             edit MEMBER '08'
             edit NP '1'
@@ -23751,7 +23751,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim09'
             label run ""
@@ -23781,7 +23781,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_09/001:e
             edit MEMBER '09'
             edit NP '1'
@@ -23795,7 +23795,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_09/progrid:f
             edit MEMBER '09'
             edit NP '1'
@@ -23808,7 +23808,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_09/addgrib:g
             edit MEMBER '09'
             edit NP '1'
@@ -23929,7 +23929,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim10'
             label run ""
@@ -23959,7 +23959,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_10/001:e
             edit MEMBER '10'
             edit NP '1'
@@ -23973,7 +23973,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_10/progrid:f
             edit MEMBER '10'
             edit NP '1'
@@ -23986,7 +23986,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_10/addgrib:g
             edit MEMBER '10'
             edit NP '1'
@@ -24107,7 +24107,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim11'
             label run ""
@@ -24137,7 +24137,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_11/001:e
             edit MEMBER '11'
             edit NP '1'
@@ -24151,7 +24151,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_11/progrid:f
             edit MEMBER '11'
             edit NP '1'
@@ -24164,7 +24164,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_11/addgrib:g
             edit MEMBER '11'
             edit NP '1'
@@ -24285,7 +24285,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim12'
             label run ""
@@ -24315,7 +24315,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_12/001:e
             edit MEMBER '12'
             edit NP '1'
@@ -24329,7 +24329,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_12/progrid:f
             edit MEMBER '12'
             edit NP '1'
@@ -24342,7 +24342,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_12/addgrib:g
             edit MEMBER '12'
             edit NP '1'
@@ -24463,7 +24463,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim13'
             label run ""
@@ -24493,7 +24493,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_13/001:e
             edit MEMBER '13'
             edit NP '1'
@@ -24507,7 +24507,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_13/progrid:f
             edit MEMBER '13'
             edit NP '1'
@@ -24520,7 +24520,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_13/addgrib:g
             edit MEMBER '13'
             edit NP '1'
@@ -24641,7 +24641,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim14'
             label run ""
@@ -24671,7 +24671,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_14/001:e
             edit MEMBER '14'
             edit NP '1'
@@ -24685,7 +24685,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_14/progrid:f
             edit MEMBER '14'
             edit NP '1'
@@ -24698,7 +24698,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_14/addgrib:g
             edit MEMBER '14'
             edit NP '1'
@@ -24819,7 +24819,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim15'
             label run ""
@@ -24849,7 +24849,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_15/001:e
             edit MEMBER '15'
             edit NP '1'
@@ -24863,7 +24863,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_15/progrid:f
             edit MEMBER '15'
             edit NP '1'
@@ -24876,7 +24876,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_15/addgrib:g
             edit MEMBER '15'
             edit NP '1'
@@ -24997,7 +24997,7 @@ suite claef
             edit NPRGPEW '1'
             edit CLASS 'tp'
             edit NNODES '2'
-            edit ASSIMM '6'
+            edit ASSIMM '10'
             edit ENSJK '1'
             edit NAME 'minim16'
             label run ""
@@ -25027,7 +25027,7 @@ suite claef
             label error ""
             event e
           task progrid
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_16/001:e
             edit MEMBER '16'
             edit NP '1'
@@ -25041,7 +25041,7 @@ suite claef
             label error ""
             event f
           task addgrib
-            complete :LEAD < :LEADT
+            complete :LEADCTL < :LEADT
             trigger ../MEM_16/progrid:f
             edit MEMBER '16'
             edit NP '1'
@@ -25054,7 +25054,7 @@ suite claef
             label error ""
             event g
           task transfer
-            complete :LEAD < :LEADT or :TRANSF == 0
+            complete :LEADCTL < :LEADT or :TRANSF == 0
             trigger :TRANSF == 1 and ../MEM_16/addgrib:g
             edit MEMBER '16'
             edit NP '1'

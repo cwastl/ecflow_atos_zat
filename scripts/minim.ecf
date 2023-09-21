@@ -83,6 +83,12 @@ while (( $ii < $assimm )); do
    (( ii = $ii + 1 ))
 done
 
+if [[ $mem == "00" ]]
+then
+   ecflow_client --label=info "Ceilometer on for this member"
+   NAMELMINIM=${NAMELDIR}/namelist_minim_cy43t2_ceilo
+fi
+
 if [ $assimili == ".TRUE." ]
 then
 

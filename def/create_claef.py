@@ -39,7 +39,7 @@ members = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
 fcst = 60
 
 # forecasting range control member
-fcstctl = 84
+fcstctl = 66
 
 # coupling frequency
 couplf = 1
@@ -49,7 +49,7 @@ step15 = False
 
 # assimilation switches
 assimi = True   #assimilation yes/no
-assimm = 6      #number of members without 3DVar/with ceilometer
+assimm = 10      #number of members without 3DVar/with ceilometer
 assimc = 3      #assimilation cycle in hours
 eda = True      #ensemble data assimilation
 seda = True     #surface eda
@@ -76,7 +76,7 @@ n_io_serv=0
 # SBU account, cluster and user name, logport
 account = "atlaef";
 schost  = "hpc";
-sthost  = "ws2";
+sthost  = "ws1";
 user    = "zat";
 
 # main runs time schedule
@@ -105,7 +105,7 @@ timing = {
   'c03_1' : '05:30',
   'c03_2' : '08:00',
   'c06_1' : '08:30',
-  'c06_2' : '11:00',
+  'c06_2' : '12:00',
   'c09_1' : '11:30',
   'c09_2' : '14:00',
   'c12_1' : '14:30',
@@ -113,7 +113,7 @@ timing = {
   'c15_1' : '17:30',
   'c15_2' : '20:00',
   'c18_1' : '20:30',
-  'c18_2' : '23:00',
+  'c18_2' : '23:58',
   'c21_1' : '23:45',
   'c21_2' : '00:10',
 }
@@ -547,7 +547,7 @@ def family_main():
             [
                Task("progrid",
                   Trigger("../MEM_{:02d}/001:e".format(mem)),
-                  Complete(":LEAD < :LEADT"),
+                  Complete(":LEADCTL < :LEADT"),
                   Event("f"),
                   Edit(
                      MEMBER="{:02d}".format(mem),
@@ -568,7 +568,7 @@ def family_main():
             [
                Task("addgrib",
                   Trigger("../MEM_{:02d}/progrid:f".format(mem)),
-                  Complete(":LEAD < :LEADT"),
+                  Complete(":LEADCTL < :LEADT"),
                   Event("g"),
                   Edit(
                      MEMBER="{:02d}".format(mem),
@@ -588,7 +588,7 @@ def family_main():
             [
                Task("transfer",
                   Trigger(":TRANSF == 1 and ../MEM_{:02d}/addgrib:g".format(mem)),
-                  Complete(":LEAD < :LEADT or :TRANSF == 0"),
+                  Complete(":LEADCTL < :LEADT or :TRANSF == 0"),
                   Edit(
                      MEMBER="{:02d}".format(mem),
                      NP=1,
@@ -712,7 +712,7 @@ defs = Defs().add(
 
                 # Main Runs per day (00, 03, 06, 09,  12, 15, 18, 21)
                 Family("RUN_00",
-                   Edit( LAUF='00', VORHI=6, LEAD=fcst, LEADCTL=fcstctl ),
+                   Edit( LAUF='00', VORHI=6, LEAD=fcst, LEADCTL=84 ),
 
                    # add suite Families and Tasks
                    family_dummy(timing['c00_1'],timing['c00_2']),
@@ -734,7 +734,7 @@ defs = Defs().add(
                 ),
 
                 Family("RUN_06",
-                   Edit( LAUF='06',VORHI=6, LEAD=assimc, LEADCTL=assimc ),
+                   Edit( LAUF='06',VORHI=6, LEAD=assimc, LEADCTL=fcstctl ),
 
                    # add suite Families and Tasks
                    family_dummy(timing['c06_1'],timing['c06_2']),
@@ -778,7 +778,7 @@ defs = Defs().add(
                 ),
 
                 Family("RUN_18",
-                   Edit( LAUF='18',VORHI=6, LEAD=assimc, LEADCTL=assimc ),
+                   Edit( LAUF='18',VORHI=6, LEAD=assimc, LEADCTL=fcstctl ),
 
                    # add suite Families and Tasks
                    family_dummy(timing['c18_1'],timing['c18_2']),
